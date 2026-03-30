@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+import { site } from "../content/site";
+import About from "./about.astro";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.name,
+  url: site.url,
+  inLanguage: site.locale
+};
+---
+
+<Base
+  title={site.name}
+  description={site.description}
+  canonicalPath="/"
+  jsonLd={jsonLd}
+>
+  <article class="prose">
+    <h1>The event uniting <span class="green-text">content</span> enthusiasts is <span class="pink-text">back</span>.</h1>
+
+    <section class="block">
+      <p>24–25 September 2026<br />
+      Kraków, Poland</p>
+    </section>
+  </article>
+</Base>
