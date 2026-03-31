@@ -2,7 +2,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: process.env.SITE_URL,
+  site: 'https://CAKEconf2026.github.io',
   integrations: [sitemap()],
   fonts: [{
     provider: fontProviders.fontsource(),
