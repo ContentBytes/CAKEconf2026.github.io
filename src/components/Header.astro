@@ -1,6 +1,6 @@
 ---
 import { site, type SiteNavItem } from "../content/site";
-
+import Button from "./Button.astro";
 const { brand = site.name, nav = site.nav } = Astro.props as {
   brand?: string;
   nav?: SiteNavItem[];
@@ -8,11 +8,17 @@ const { brand = site.name, nav = site.nav } = Astro.props as {
 
 const path = Astro.url.pathname;
 const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+
+const callForSpeakersLink = "https://forms.gle/bHdcRyDTDuXhoeXL6";
 ---
 
 <header class="header">
   <div class="header__inner">
     <a class="header__brand" href="/">
-      <img src="/logo-with-date.svg" alt="CAKE conf logo" width="140" height="140" /></a>
-  </div>
+      <img src="/logo.svg" alt="CAKE conf logo" width="140" height="140" />
+    </a>
+    <a href={callForSpeakersLink} target="_blank" rel="noopener noreferrer">
+      <Button class="success-btn">Call for speakers</Button>
+    </a>
+    </div>
 </header>

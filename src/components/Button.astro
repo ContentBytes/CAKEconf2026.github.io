@@ -1,0 +1,25 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface ButtonProps extends HTMLAttributes<"button"> {
+  type?: "button" | "submit" | "reset";
+  classes?: string;
+}
+
+const { type = "button", /* size = "md", */ classes, ...rest } = Astro.props;
+---
+
+<button class:list={[classes]} {type} {...rest}>
+  <slot />
+</button>
+
+<style>
+  button {
+    cursor: pointer;
+    font-family: var(--font-space-grotesk);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+  }
+</style>

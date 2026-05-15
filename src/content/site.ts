@@ -49,7 +49,7 @@ export const site: SiteConfig = {
     { label: "Contact", href: "/contact" }, */
   ],
   seo: {
-    ogImage: "/logo-with-date.svg",
+    ogImage: "/logo.svg",
     robots: "index,follow",
     themeColor: "#fbfbf9"
   }
