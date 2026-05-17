@@ -37,7 +37,7 @@
   flex-wrap: wrap;
   height: 80vh;
 }
-.green-text{ color: #009402; }
+.green-text{ color:var(--main-green); }
 .pink-text{ color: #E852A2; }
 
 .block {
