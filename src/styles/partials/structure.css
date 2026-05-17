@@ -18,12 +18,16 @@
   place-items: center;
 }
 
-.prose h1{ font-size: 62px; letter-spacing: -0.02em; margin: 0 0 var(--space-3); line-height: 1.3;}
+.prose h1{ font-size: 72px; letter-spacing: -0.02em; margin: 0 0 var(--space-3); line-height: 1.3;}
 .prose h2{ font-size: 18px; margin: var(--space-5) 0 var(--space-2); }
 .prose p{ font-size: 14px; margin: 0 0 var(--space-3); color: var(--fg); }
 .prose .lead{ color: var(--muted); max-width: 65ch; }
 .prose code{ font-family: var(--font-mono); font-size: 0.95em; }
 .prose ul{ margin: 0 0 var(--space-3); padding-left: 1.2em; }
+
+@media only screen and (max-width: 768px) {
+  .prose h1{ font-size: 48px; }
+}
 
 .intro-text {
   display: flex;
