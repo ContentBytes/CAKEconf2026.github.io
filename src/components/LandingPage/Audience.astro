@@ -1,0 +1,40 @@
+---
+import Image from "../../assets/audience.png"
+---
+
+<section class="section background">
+  <img src={Image.src} alt="Audience" class="img"/>
+  <div class="section__inner">
+    <span class="stats">
+      <p>260+ spots</p>
+      <p>15+ speakers</p>
+      <p>2 days</p>
+    </span>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ECECEC;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .stats {
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+    }
+  }
+</style>

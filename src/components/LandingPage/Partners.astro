@@ -1,0 +1,58 @@
+---
+import Button from "../Button.astro";
+
+/* Partners */
+import TechwriterPL from "../../assets/partners/techwriter-pl.png";
+import TWkoduje from "../../assets/partners/techwriter-koduje.png";
+import Ways from "../../assets/partners/ways.png";
+
+const partners = [
+  { name: "techwriter.pl", image: TechwriterPL },
+  { name: "techwriter-koduje", image: TWkoduje },
+  { name: "ways", image: Ways },
+]
+---
+
+<section class="section background">
+  <div class="section__inner">
+    <h2>Partner with us</h2>
+    <div class="description">
+      <p>Want to get your brand more visible to the community? Contact us for sponsorship offers and partnership options.</p>
+      <p>hello@contentbytes.pl</p>
+    </div>
+    <div class="partners">
+      {partners.map((partner) => (
+        <img src={partner.image.src} alt={partner.name} class="partner-image"/>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ECECEC;
+    color: #000000;
+    padding: 100px 0;
+  }
+
+  .description {
+    padding: 40px 0;
+  }
+
+  .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 50px;
+  }
+
+  .partner-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 180px;
+    background-color: white;
+  }
+</style>

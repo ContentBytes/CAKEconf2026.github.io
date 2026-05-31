@@ -15,8 +15,7 @@ export type SiteConfig = {
     email?: string;
     url?: string;
     socials?: {
-      x?: string;
-      github?: string;
+      instagram?: string;
       linkedin?: string;
     };
   };
@@ -40,7 +39,8 @@ export const site: SiteConfig = {
     email: "hello@contentbytes.pl",
     url: "https://contentbytes.pl",
     socials: {
-      linkedin: "https://www.linkedin.com/company/content-bytes"
+      linkedin: "https://www.linkedin.com/company/content-bytes",
+      instagram: "https://www.instagram.com/contentbytes.krk/",
     }
   },
   nav: [

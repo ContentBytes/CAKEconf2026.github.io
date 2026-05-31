@@ -1,0 +1,67 @@
+---
+import Talks from "../../assets/talks.png"
+import Workshops from "../../assets/workshops.png"
+import Networking from "../../assets/networking.png"
+---
+
+<section class="section background">
+  <div class="section__inner">
+    <div class="single-description">
+      <span class="title-and-desc">
+        <h2>Talks</h2>
+        <p>With a lineup of experienced speakers, CAKE conf keeps the energy high from start to finish. Whether you’re diving deep into the future of AI, mastering the art of documentation management, or exploring the world of UX, there is zero room for boredom here.</p>
+      </span>
+      <img src={Talks.src} alt="Talks" class="img"/>
+    </div>
+    <div class="single-description">
+      <img src={Workshops.src} alt="Workshops" class="img workshops"/>
+      <span class="title-and-desc">
+        <h2>Workshops</h2>
+        <p>Interested in learning by doing?  Our  workshops match you with expert trainers in small, focused groups. Dive into topics, sharpen your skills, and leave with practical tools you can put to work immediately.</p>
+      </span>
+    </div>
+    <div class="single-description">
+      <span class="title-and-desc">
+        <h2>Networking</h2>
+        <p>Meet other content creators. Share new ideas over coffee, brainstorm  during the breaks. Talks and workshops give you food for thought, but networking is the heart of CAKE conf, giving you time and space to discuss what you have just experienced on the spot.</p>
+      </span>
+      <img src={Networking.src} alt="Networking" class="img"/>
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .img {
+    width: 520px;
+    max-width: 100%;
+  }
+  
+  .single-description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 100px 0;
+  }
+
+  .title-and-desc p {
+    padding: 40px 0;
+  }
+
+  @media only screen and (max-width: 996px) {
+    .single-description {
+      flex-direction: column;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+    .workshops {
+      order: 2;
+    }
+  }
+
+</style>
