@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
 import { site } from "../content/site";
 
 const jsonLd = {
@@ -9,6 +10,11 @@ const jsonLd = {
   url: site.url,
   inLanguage: site.locale
 };
+
+import Speakers from "../components/LandingPage/Speakers.astro";
+import Audience from "../components/LandingPage/Audience.astro";
+import Description from "../components/LandingPage/Description.astro";
+import Partners from "../components/LandingPage/Partners.astro";
 ---
 
 <Base
@@ -17,10 +23,16 @@ const jsonLd = {
   canonicalPath="/"
   jsonLd={jsonLd}
 >
-  <article class="prose intro-text">
-    <h1>The event uniting <span class="green-text">content</span> enthusiasts is <span class="pink-text">back</span>.</h1>
+  <Section>
+    <article class="prose intro-text">
+      <h1>The event uniting <span class="green-text">content</span> enthusiasts is <span class="pink-text">back</span>.</h1>
 
-      <p>24–25 September 2026<br />
-      Kraków, Poland</p>
-  </article>
+        <p>24–25 September 2026<br />
+        Kraków, Poland</p>
+    </article>
+  </Section>
+  <Speakers />
+  <Audience />
+  <Description />
+  <Partners />
 </Base>

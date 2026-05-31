@@ -5,6 +5,7 @@ import SkipLink from "../components/SkipLink.astro";
 import { site } from "../content/site";
 import Cloudfare from "../components/Cloudfare.astro";
 import { Font } from "astro:assets";
+import Footer from "../components/Footer.astro";
 
 import "../styles/global.css";
 
@@ -47,5 +48,6 @@ const canonical = new URL(canonicalPath, site.url).toString();
     <main id="main" class={`page__main ${mainCentered ? "page__main--centered" : ""}`}>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
