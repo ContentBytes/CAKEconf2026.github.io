@@ -1,5 +1,7 @@
 ---
 import Button from "../Button.astro"
+
+const callForSpeakersLink = "https://forms.gle/bHdcRyDTDuXhoeXL6";
 ---
 
 <section class="section speakers background">
@@ -8,7 +10,9 @@ import Button from "../Button.astro"
     <p>By bringing together speakers from all kinds of professional backgrounds, we’re creating an agenda packed with fresh knowledge you won’t find anywhere else
       Want to be one of the minds shaping that conversation?  If you want to share a game-changing topic or lead a hands-on workshop,  the call for speakers is open!
       </p>
-    <Button class="success-btn">Call for speakers</Button>
+    <a href={callForSpeakersLink} target="_blank" rel="noopener noreferrer">
+      <Button class="success-btn">Call for speakers</Button>
+    </a>
   </div>
 </section>
 
