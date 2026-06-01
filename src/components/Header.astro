@@ -1,6 +1,8 @@
 ---
 import { site, type SiteNavItem } from "../content/site";
 import Button from "./Button.astro";
+import { allUrls } from "../assets/allUrls.js";
+
 const { brand = site.name, nav = site.nav } = Astro.props as {
   brand?: string;
   nav?: SiteNavItem[];
@@ -9,7 +11,7 @@ const { brand = site.name, nav = site.nav } = Astro.props as {
 const path = Astro.url.pathname;
 const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
 
-const callForSpeakersLink = "https://forms.gle/bHdcRyDTDuXhoeXL6";
+const callForSpeakersLink = allUrls.callForSpeakersLink;
 ---
 
 <header class="header">

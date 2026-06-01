@@ -1,11 +1,12 @@
 ---
 import { site, type SiteConfig } from "../content/site";
+import { allUrls } from "../assets/allUrls.js";
 
 type Author = SiteConfig["author"];
 
 const { author = site.author } = Astro.props as { author?: Author };
 const year = new Date().getFullYear();
-const getUpdatesLink = "https://dashboard.mailerlite.com/forms/1431354/152058250434446580/share";
+const getUpdatesLink = allUrls.getUpdatesLink;
 ---
 
 <footer class="footer">
