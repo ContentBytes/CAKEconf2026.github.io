@@ -5,6 +5,7 @@ type Author = SiteConfig["author"];
 
 const { author = site.author } = Astro.props as { author?: Author };
 const year = new Date().getFullYear();
+const getUpdatesLink = "https://dashboard.mailerlite.com/forms/1431354/152058250434446580/share";
 ---
 
 <footer class="footer">
@@ -46,6 +47,7 @@ const year = new Date().getFullYear();
           </a>
         )
       }
+      <a class="footer__link" href={getUpdatesLink} target="_blank" rel="noopener">Get updates</a>
     </div>
   </div>
 </footer>
