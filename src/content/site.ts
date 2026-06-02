@@ -32,12 +32,12 @@ export const site: SiteConfig = {
   tagline: "Uniting content enthusiasts",
   description:
     "A space for content enthusiasts to share, learn, explore.",
-  url: import.meta.env.SITE_URL ?? "https://contentbytes.pl",
+  url: import.meta.env.SITE_URL ?? "https://cakeconf.contentbytes.pl",
   locale: "en",
   author: {
     name: "Content Bytes",
     email: "hello@contentbytes.pl",
-    url: "https://contentbytes.pl",
+    url: "https://cakeconf.contentbytes.pl",
     socials: {
       linkedin: "https://www.linkedin.com/company/content-bytes",
       instagram: "https://www.instagram.com/contentbytes.krk/",
