@@ -1,0 +1,56 @@
+---
+import Button from "../Button.astro";
+---
+
+<section class="section background">
+  <div class="section__inner">
+    <div class="prices">
+      <div class="column">
+        <p>Individual ticket</p>
+        <p class="price">PRICE PLN PRICE</p>
+        <p>Payment options</p>
+        <p class="description">Description</p>
+        <div class="button-container">
+          <Button class="success-btn">Buy ticket</Button>
+        </div>
+      </div>
+      <div class="column">
+        <p>Group tickets</p>
+        <p class="price">PRICE PLN PRICE</p>
+        <p>Payment options</p>
+        <p>Description</p>
+        <div class="button-container">
+          <Button class="success-btn">Buy ticket</Button>
+        </div>
+      </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ECECEC;
+    color: #000000;
+    padding: 100px 0;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .price {
+    font-size: 32px; !important
+  }
+
+  .button-container {
+    padding-top: 50px;
+  }
+
+  @media only screen and (max-width: 996px) {
+    .prices {
+      flex-direction: column;
+      gap: 100px;
+    }
+  }
+</style>
