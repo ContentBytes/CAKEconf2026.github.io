@@ -6,6 +6,7 @@
 .success-btn:hover {
   background-color: #006400;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition-duration: 250ms;
 }
 
 .success-btn:focus {
