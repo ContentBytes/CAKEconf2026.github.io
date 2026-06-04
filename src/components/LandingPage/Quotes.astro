@@ -1,0 +1,68 @@
+---
+import quotes from "../../assets/quotes.json";
+---
+
+<section class="section background">
+    <div class="carousel">
+      <div class="group">
+        {quotes.map((quote) => (
+          <div class="quote">
+            <div class="quote-text">{quote.quote}</div>
+            <div class="quote-author">{quote.author}</div>
+          </div>
+        ))}
+      </div>
+      <div aria-hidden="true" class="group">
+        {quotes.map((quote) => (
+          <div class="quote">
+            <div class="quote-text">{quote.quote}</div>
+            <div class="quote-author">{quote.author}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ECECEC;
+    color: #000000;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow: hidden;
+  }
+
+  .group {
+    display: flex;
+    animation: spin 20s infinite linear;
+    gap: 200px;
+    padding-right: 200px;
+  }
+
+  .quote {
+    min-width: 450px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .quote-text {
+    font-size: 32px;
+  }
+
+  @keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+  }
+
+  @media only screen and (max-width: 600px) {
+    .quote {
+      min-width: 300px;
+    }
+</style>
