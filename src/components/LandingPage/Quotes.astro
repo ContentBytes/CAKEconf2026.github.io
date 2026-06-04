@@ -46,7 +46,6 @@ import quotes from "../../assets/quotes.json";
 
   .quote {
     min-width: 450px;
-    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,6 +53,7 @@ import quotes from "../../assets/quotes.json";
 
   .quote-text {
     font-size: 32px;
+    padding-bottom: 30px;
   }
 
   @keyframes spin {
@@ -64,5 +64,8 @@ import quotes from "../../assets/quotes.json";
   @media only screen and (max-width: 600px) {
     .quote {
       min-width: 300px;
+    }
+    .group {
+      height: 250px;
     }
 </style>
