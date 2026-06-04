@@ -1,0 +1,49 @@
+---
+import faq from "../../data/faqTickets.json";
+---
+
+<section class="section background">
+  <div class="section__inner container">
+    <h2>FAQ</h2>
+    <div class="faq">
+      {
+        faq.map((item) => (
+          <details class="faq-item">
+            <summary class="faq-q">{item.question}</summary>
+            <p>{item.answer}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .faq {
+    padding-top: 20px;
+  }
+
+  .faq-item {
+    padding-top: 20px;
+    cursor: pointer;
+  }
+
+  .faq-q {
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+</style>
