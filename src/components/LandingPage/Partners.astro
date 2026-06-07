@@ -7,30 +7,46 @@ import TWkoduje from "../../assets/partners/techwriter-koduje.png";
 import Ways from "../../assets/partners/ways.png";
 
 const partners = [
-  { name: "techwriter.pl", image: TechwriterPL },
-  { name: "techwriter-koduje", image: TWkoduje },
-  { name: "ways", image: Ways },
-]
+  { name: "techwriter.pl", image: TechwriterPL, url: "https://techwriter.pl" },
+  {
+    name: "techwriter-koduje",
+    image: TWkoduje,
+    url: "https://techwriterkoduje.pl",
+  },
+  { name: "ways", image: Ways, url: "https://waysconf.com" },
+];
 ---
 
 <section class="section background">
   <div class="section__inner">
     <h2>Partner with us</h2>
     <div class="description">
-      <p>Want to get your brand more visible to the community? Contact us for sponsorship offers and partnership options.</p>
+      <p>
+        Want to get your brand more visible to the community? Contact us for
+        sponsorship offers and partnership options.
+      </p>
       <p>hello@contentbytes.pl</p>
     </div>
     <div class="partners">
-      {partners.map((partner) => (
-        <img src={partner.image.src} alt={partner.name} class="partner-image"/>
-      ))}
+      {
+        partners.map((partner) => (
+          <a href={partner.url} target="_blank" rel="noopener noreferrer">
+          <img
+            src={partner.image.src}
+              alt={partner.name}
+              class="partner-image"
+              title=`Go to ${partner.url}`
+            />
+          </a>
+        ))
+      }
     </div>
   </div>
 </section>
 
 <style>
   .background {
-    background-color: #ECECEC;
+    background-color: #ececec;
     color: #000000;
     padding: 100px 0;
   }
