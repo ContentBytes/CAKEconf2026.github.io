@@ -1163,6 +1163,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cake-conf-website@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "cake-conf-website@workspace:."
+  dependencies:
+    "@astrojs/sitemap": "npm:3.7.2"
+    astro: "npm:6.1.2"
+    typescript: "npm:^5.0.0"
+  languageName: unknown
+  linkType: soft
+
 "ccount@npm:^2.0.0":
   version: 2.0.1
   resolution: "ccount@npm:2.0.1"
@@ -3370,16 +3380,6 @@ __metadata:
   checksum: 10c0/6173e1d903dca41dcab6a2deed8b4caf61bd13b6d7af8374713500570aa929ff9414ae09a0519f4f8772df993300305a395d4871f35bc4ca72b6db57e1f30af8
   languageName: node
   linkType: hard
-
-"square-wasp@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "square-wasp@workspace:."
-  dependencies:
-    "@astrojs/sitemap": "npm:3.7.2"
-    astro: "npm:6.1.2"
-    typescript: "npm:^5.0.0"
-  languageName: unknown
-  linkType: soft
 
 "ssri@npm:^13.0.0":
   version: 13.0.1
