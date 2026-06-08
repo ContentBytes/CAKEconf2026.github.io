@@ -1,7 +1,15 @@
 [
   {
     "question": "Will I get an invoice?",
-    "answer": "Yup."
+    "answer": "Yes, you can request an individual or corporate invoice. As a non-profit organization, we sell tickets exempt from VAT in both cases."
+  },
+  {
+    "question": "I can't attend the conference. Can I return or transfer my ticket?",
+    "answer": "No, tickets are non-refundable and non-transferable."
+  },
+  {
+    "question": "Can I buy a ticket for the first or second day of the conference?",
+    "answer": "No, the tickets are sold for both days."
   },
   {
     "question": "Will the presentations be recorded?",
