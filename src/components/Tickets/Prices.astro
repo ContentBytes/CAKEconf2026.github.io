@@ -1,5 +1,9 @@
 ---
 import Button from "../Button.astro";
+import { allUrls } from "../../assets/allUrls.js";
+
+const ticketsGroupLink = allUrls.ticketsGroupLink;
+const earlyBirdTicketLink = allUrls.earlyBirdTicketLink;
 ---
 
 <section class="section background">
@@ -8,19 +12,32 @@ import Button from "../Button.astro";
       <div class="column">
         <p>Individual ticket</p>
         <p class="price">400 PLN</p>
-        <p>Tickets exempt from VAT, the price you see is the price you pay.</p>
-        <p>You can request a name or corporate invoice during payment.</p>
-        <div class="button-container">
-          <Button class="success-btn">Buy ticket</Button>
-        </div>
+        <div class="details">
+          <div>
+            <p>Tickets exempt from VAT, the price you see is the price you pay.</p>
+            <p>You can request a name or corporate invoice during payment.</p>
+          </div>
+          <div class="button-container">
+            <a href={earlyBirdTicketLink} target="_blank" rel="noopener noreferrer">
+              <Button class="success-btn">Buy ticket</Button>
+            </a>
+          </div>
       </div>
+    </div>
       <div class="column">
-        <p>Group tickets</p>
-        <p class="price">PRICE PLN PRICE</p>
-        <p>Payment options</p>
-        <p>Description</p>
+        <p>Group tickets (4+)</p>
+        <p class="price">360 PLN</p>
+        <div class="details">
+          <div>
+        <p>Tickets exempt from VAT, the price you see is the price you pay.</p>
+        <p>To buy tickets with a discounted price, fill in the form.</p> 
+        <p>We will send you the payment details and the invoice.</p>
+      </div>
         <div class="button-container">
-          <Button class="success-btn">Buy ticket</Button>
+          <a href={ticketsGroupLink} target="_blank" rel="noopener noreferrer">
+            <Button class="success-btn">Buy tickets</Button>
+          </a>
+        </div>
         </div>
       </div>
   </div>
@@ -37,10 +54,17 @@ import Button from "../Button.astro";
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .price {
     font-size: 32px; !important
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .button-container {
