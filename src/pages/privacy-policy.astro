@@ -1,0 +1,114 @@
+---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+
+const title = "Privacy policy";
+const description = "Privacy policy";
+---
+
+<Base title={title} description={description} canonicalPath="/privacy-policy">
+  <Section>
+    <article class="prose">
+      <h1>Privacy policy</h1>
+      <h2>1. Data Controller</h2>
+      <p>
+        The controller of your personal data is Content Bytes Foundation, based
+        in Kraków, Poland.
+      </p>
+      <p>
+        If you have any questions regarding this Privacy Policy or the
+        processing of your personal data, you can contact us at:
+        hello@contentbytes.pl.
+      </p>
+      <h2>2. Personal Data We Collect</h2>
+      <p>
+        In connection with ticket sales, we may process the following personal
+        data:
+      </p>
+      <ul>
+        <li>first and last name</li>
+        <li>email address</li>
+        <li>phone number (if provided)</li>
+        <li>information related to the purchase of a ticket</li>
+      </ul>
+      <p>
+        Payment information is processed by Stripe, our third-party payment
+        service provider.
+      </p>
+      <h2>3. Purposes and Legal Bases for Processing</h2>
+      <p>We process personal data for the following purposes:</p>
+      <ul>
+        <li>
+          to sell and deliver tickets and manage your order, pursuant to Article
+          6(1)(b) GDPR (performance of a contract)
+        </li>
+        <li>
+          to comply with legal obligations, including accounting and tax
+          requirements, pursuant to Article 6(1)(c) GDPR
+        </li>
+        <li>
+          to establish, exercise, or defend legal claims, pursuant to Article
+          6(1)(f) GDPR (legitimate interests of the Controller)
+        </li>
+      </ul>
+      <p>
+        We may also process participants’ images captured in photographs and/or
+        video recordings taken during the Event. Such materials may be used for
+        documentation and promotional purposes related to the Organizer’s
+        activities, including publication on websites, social media channels,
+        and other marketing materials. This processing is based on the
+        Controller’s legitimate interest pursuant to Article 6(1)(f) GDPR.
+      </p>
+      <h2>4. Data Recipients</h2>
+      <p>
+        Your personal data may be shared with service providers supporting the
+        ticket sales process, including:
+      </p>
+      <ul>
+        <li>Naffy (ticketing and registration platform)</li>
+        <li>Stripe (payment processing provider)</li>
+        <li>
+          accounting, IT, and hosting service providers, where necessary for the
+          purposes described above
+        </li>
+      </ul>
+      <h2>5. Data Retention</h2>
+      <p>
+        We retain personal data for as long as necessary to perform the contract
+        and fulfill our legal obligations, including obligations arising from
+        tax and accounting laws.
+      </p>
+      <h2>6. Your Rights</h2>
+      <p>Under the GDPR, you have the right to:</p>
+      <ul>
+        <li>access your personal data</li>
+        <li>rectify inaccurate personal data</li>
+        <li>request the erasure of your personal data</li>
+        <li>request restriction of processing</li>
+        <li>object to processing where permitted by law</li>
+        <li>
+          receive your personal data in a portable format where applicable
+        </li>
+        <li>lodge a complaint with the competent data protection authority</li>
+      </ul>
+      <h2>7. International Data Transfers</h2>
+      <p>
+        Some service providers, including Stripe, may process personal data
+        outside the European Economic Area (EEA). In such cases, personal data
+        is transferred in accordance with GDPR requirements and subject to
+        appropriate safeguards.
+      </p>
+      <h2>8. Contact</h2>
+      <p>
+        If you have any questions regarding the processing of your personal
+        data, please contact us at: hello@contentbytes.pl.
+      </p>
+    </article>
+  </Section>
+</Base>
+
+<style>
+  .prose h2 {
+    color: white;
+  }
+</style>

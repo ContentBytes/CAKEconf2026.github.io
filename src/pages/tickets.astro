@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+import Prices from "../components/Tickets/Prices.astro";
+import FAQ from "../components/Tickets/FAQ.astro";
+
+const title = "Tickets";
+const description = "Ticket prices and availability";
+---
+
+<Base title={title} description={description} canonicalPath="/tickets">
+  <Section>
+    <article class="prose intro-text">
+      <h1 class="pink-text">CAKE conf early bird tickets</h1>
+      <p>
+        24–25 September 2026<br />
+        Kraków, Poland
+      </p>
+    </article>
+  </Section>
+  <Prices />
+  <FAQ />
+</Base>

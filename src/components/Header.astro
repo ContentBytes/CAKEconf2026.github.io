@@ -10,8 +10,6 @@ const { brand = site.name, nav = site.nav } = Astro.props as {
 
 const path = Astro.url.pathname;
 const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
-
-const callForSpeakersLink = allUrls.callForSpeakersLink;
 ---
 
 <header class="header">
@@ -19,8 +17,8 @@ const callForSpeakersLink = allUrls.callForSpeakersLink;
     <a class="header__brand" href="/">
       <img src="/logo.svg" alt="CAKE conf logo" width="140" height="140" />
     </a>
-    <a href={callForSpeakersLink} target="_blank" rel="noopener noreferrer">
-      <Button class="success-btn">Call for speakers</Button>
+    <a href="/tickets">
+      <Button class="success-btn">Get tickets</Button>
     </a>
     </div>
 </header>
