@@ -1,0 +1,16 @@
+---
+import Section from "./Section.astro";
+const { title } = Astro.props;
+---
+
+<Section>
+  <span class="prose">
+    <h1>{title}</h1>
+  </span>
+</Section>
+
+<style>
+  h1 {
+    color: var(--main-pink);
+  }
+</style>
