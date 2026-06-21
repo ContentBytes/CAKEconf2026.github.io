@@ -1,0 +1,74 @@
+---
+import Orgs from "../../data/organizers.json";
+
+import PawelImg from "../../assets/orgs/pawel.png";
+import BarbaraImg from "../../assets/orgs/barbara.png";
+import KasiaImg from "../../assets/orgs/kasia.png";
+import EdytaImg from "../../assets/orgs/edyta.png";
+
+const imgs: Record<string, ImageMetadata> = {
+  pawel: PawelImg,
+  barbara: BarbaraImg,
+  kasia: KasiaImg,
+  edyta: EdytaImg,
+};
+---
+
+<section class="section background">
+  <div class="section__inner container">
+    <h2>Organizers</h2>
+    <p>Say hello to the CAKE Conf organizers!</p>
+    <p>We combine our content-driven powers to make sure the community thrives! 🔥</p>
+    <div class="organizers">
+      {Orgs.map((org) => (
+        <div class="organizer">
+          <img src={imgs[org.id].src} alt=`${org.name}` class="picture" />
+          <div class="description">
+            <h3><a href={org.linkedin} target="_blank" rel="noopener noreferrer">{org.name}</a></h3>
+            <p>{org.role}</p>
+            <p>{org.bio}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .organizer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .picture {
+    height: 250px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .organizer {
+      flex-wrap: wrap;
+    }
+  }
+</style>

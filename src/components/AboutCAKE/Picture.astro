@@ -1,0 +1,40 @@
+---
+import Image from "../../assets/images/audience.png"
+---
+
+<section class="section background">
+  <img src={Image.src} alt="Audience at CAKE conf 2025" class="img"/>
+  <div class="section__inner">
+    <span class="stats">
+      <p>COMMUNITY</p>
+      <p>MEETUPS</p>
+      <p>CONFERENCES</p>
+    </span>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ffffff;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .stats {
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+    }
+  }
+</style>

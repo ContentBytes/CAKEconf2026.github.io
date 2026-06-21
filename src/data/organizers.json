@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Paweł Chłodnicki",
+    "id": "pawel",
+    "role": "#Design",
+    "bio": "Paweł is currently working as the Senior Product Designer at SINGU. He took his first professional steps 15 years ago in translation and localization, both as an IC and as the founder of a small, yet global agency. He began his journey in IT as a technical writer (and whatnot) in a startup.",
+    "image": "/orgs/pawel.png",
+    "linkedin": "https://www.linkedin.com/in/pawelchlodnicki/"
+  },
+  {
+    "name": "Barbara Czyż",
+    "id": "barbara",
+    "role": "#EventLogistics",
+    "bio": "Barbara is a technical writer passionate about the docs-as-code approach and the API world. Currently working at Google, she creates documentation for Google Cloud Platform and tightens her relationship with the code.",
+    "image": "/orgs/barbara.png",
+    "linkedin": "https://www.linkedin.com/in/barbara-szwarc/"
+  },
+  {
+    "name": "Katarzyna Zielińska",
+    "id": "kasia",
+    "role": "#SocialMedia",
+    "bio": "Katarzyna spends her days in HR and agile transformation at Cisco, and her evenings shaping how Content Bytes shows up on social media — camera in hand at events, since photography is her other passion.",
+    "image": "/orgs/kasia.png",
+    "linkedin": "https://www.linkedin.com/in/rzynazielinska/"
+  },
+  {
+    "name": "Edyta Rakowska",
+    "id": "edyta",
+    "role": "#Partnerships",
+    "bio": "After a couple of years of translating boiler construction diagrams and other similarly fascinating texts, Edyta switched to creating software documentation and never looked back. Currently, she works as a senior technical writer at Apify.",
+    "image": "/orgs/edyta.png",
+    "linkedin": "https://www.linkedin.com/in/edyta-rakowska/"
+  }
+]

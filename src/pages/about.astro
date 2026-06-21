@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import Section from "../components/Section.astro";
+
+import Cake from "../components/AboutCAKE/Cake.astro";
+import Audience from "../components/AboutCAKE/Audience.astro";
+import Picture from "../components/AboutCAKE/Picture.astro";
+import ByContentBytes from "../components/AboutCAKE/ByContentBytes.astro";
+import Organizers from "../components/AboutCAKE/Organizers.astro";
+
+const title = "About CAKE";
+const description = "About CAKE conf";
+---
+
+<Base title={title} description={description} canonicalPath="/about">
+  <Section>
+    <span class="prose">
+      <h1>About CAKE</h1>
+    </span>
+  </Section>
+  <Cake />
+  <Audience />
+  <Picture />
+  <ByContentBytes />
+  <Organizers />
+</Base>
+
+<style>
+  h1 {
+    color: var(--main-pink);
+  }
+</style>

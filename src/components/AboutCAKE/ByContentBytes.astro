@@ -1,0 +1,83 @@
+---
+import CommunityImg from "../../assets/images/about/community.png"
+import ConferencesImg from "../../assets/images/about/cup.png"
+import MeetupsImg from "../../assets/images/about/meetups.png"
+---
+
+<section class="section background">
+  <div class="section__inner container">
+    <h2>By Content Bytes</h2>
+    <p>Our mission, as the Content Bytes Foundation,  is to explore, share, and learn about content.</p>
+    <p>Through talks, workshops, and networking sessions, we discover the role content plays in shaping products, empowering users, and driving strategy. We strongly believe that together, we can create a thriving content community ready to drive exciting initiatives.</p>
+    <div class="content-bytes">
+      <div class="tile">
+        <img src={CommunityImg.src} alt="A group of people at one of Content Bytes meetups" class="img" />
+        <div class="description">
+          <h3>Community</h3>
+          <p>Content Bytes allows diverse content enthusiasts connect and exchange insights, fostering a truly thriving environment</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src={MeetupsImg.src} alt="A group of people at one of Content Bytes meetups" class="img" />
+        <div class="description">
+          <h3>Meetups</h3>
+          <p>Monthly meetups offer a regular dose of captivating content, turning regular meetings into a creative hub for all participants</p>
+        </div>
+      </div>
+      <div class="tile">
+        <img src={ConferencesImg.src} alt="A coffee cup from CAKE conf 2025 with a sticker on it" class="img" />
+        <div class="description">
+          <h3>Conferences</h3>
+          <p>Conferences give you a deep dive into a variety of topics presented by experts. Networking options spark ideas, projects, and cooperation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ECECEC;
+    color: #000000;
+  }
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .content-bytes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 30px;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 150px;
+  }
+
+  .img {
+    height: 150px;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .content-bytes {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+</style>

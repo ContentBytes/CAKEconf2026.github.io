@@ -21,6 +21,7 @@
 }
 
 .section h2 {font-size: 48px; text-transform: uppercase; color: #000000; margin: 0 }
+.section h3 {margin: 0 }
 .section p {color: #000000; }
 
 .section__inner {
