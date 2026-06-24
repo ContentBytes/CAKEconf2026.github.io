@@ -1,21 +1,21 @@
 ---
-import Image from "../../assets/images/audience.png"
+const { image, altText, phrases } = Astro.props;
 ---
 
 <section class="section background">
-  <img src={Image.src} alt="Audience at CAKE conf 2025" class="img"/>
+  <img src={image.src} alt={altText} class="img"/>
   <div class="section__inner">
-    <span class="stats">
-      <p>260+ spots</p>
-      <p>15+ speakers</p>
-      <p>2 days</p>
+    <span class="phrases">
+      {phrases.map((phrase: string) => (
+        <p>{phrase}</p>
+      ))}
     </span>
   </div>
 </section>
 
 <style>
   .background {
-    background-color: #ECECEC;
+    background-color: #ffffff;
   }
 
   .img {
@@ -24,7 +24,7 @@ import Image from "../../assets/images/audience.png"
     display: block;
   }
 
-  .stats {
+  .phrases {
     font-size: 32px;
     display: flex;
     flex-direction: row;
@@ -33,7 +33,7 @@ import Image from "../../assets/images/audience.png"
   }
 
   @media only screen and (max-width: 768px) {
-    .stats {
+    .phrases {
       flex-direction: column;
     }
   }

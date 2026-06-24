@@ -8,14 +8,16 @@ const jsonLd = {
   "@type": "WebSite",
   name: site.name,
   url: site.url,
-  inLanguage: site.locale
+  inLanguage: site.locale,
 };
 
 import Speakers from "../components/LandingPage/Speakers.astro";
 import Quotes from "../components/LandingPage/Quotes.astro";
-import Audience from "../components/LandingPage/Audience.astro";
+import BigPicture from "../components/common/BigPicture.astro";
 import Description from "../components/LandingPage/Description.astro";
 import Partners from "../components/LandingPage/Partners.astro";
+
+import Image from "../assets/images/audience.png";
 ---
 
 <Base
@@ -26,15 +28,24 @@ import Partners from "../components/LandingPage/Partners.astro";
 >
   <Section>
     <article class="prose intro-text">
-      <h1>The event uniting <span class="green-text">content</span> enthusiasts is <span class="pink-text">back</span>.</h1>
-
-        <p>24–25 September 2026<br />
-        Kraków, Poland</p>
+      <h1>
+        The event uniting <span class="green-text">content</span> enthusiasts is <span
+          class="pink-text">back</span
+        >.
+      </h1>
+      <p>
+        24–25 September 2026<br />
+        Kraków, Poland
+      </p>
     </article>
   </Section>
   <Speakers />
   <Quotes />
-  <Audience />
+  <BigPicture
+    image={Image}
+    altText="Audience at CAKE conf 2025"
+    phrases={["260+ spots", "15+ speakers", "2 days"]}
+  />
   <Description />
   <Partners />
 </Base>
