@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import BigPicture from "../components/common/BigPicture.astro";
+
+import AudienceImg from "../assets/images/2025/audience.png";
+import ThematicTracks from "../components/CAKE2025/ThematicTracks.astro";
+
+const title = "CAKE conf 2025";
+const description = "Read about CAKE conf 2025";
+---
+
+<Base title={title} description={description} canonicalPath="/2025">
+  <Hero title={title} />
+  <BigPicture
+    image={AudienceImg}
+    altText="Audience at CAKE conf 2025"
+    phrases={["2 DAYS", "6 THEMATIC TRACKS", "TONS OF FUN"]}
+  />
+  <ThematicTracks />
+</Base>
