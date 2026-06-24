@@ -4,6 +4,7 @@ import Hero from "../components/Hero.astro";
 import Image from "../assets/images/about/audience.png";
 
 import Cake from "../components/AboutCAKE/Cake.astro";
+import Audience from "../components/AboutCAKE/Audience.astro";
 import BigPicture from "../components/common/BigPicture.astro";
 import ByContentBytes from "../components/AboutCAKE/ByContentBytes.astro";
 import Organizers from "../components/AboutCAKE/Organizers.astro";
@@ -15,6 +16,7 @@ const description = "About CAKE conf";
 <Base title={title} description={description} canonicalPath="/about">
   <Hero title={title} />
   <Cake />
+  <Audience />
   <BigPicture
     image={Image}
     altText="Audience at CAKE conf 2025"
