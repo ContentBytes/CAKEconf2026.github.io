@@ -1,15 +1,10 @@
 ---
-import { site, type SiteNavItem } from "../content/site";
 import Button from "./Button.astro";
-import { allUrls } from "../assets/allUrls.js";
-
-const { brand = site.name, nav = site.nav } = Astro.props as {
-  brand?: string;
-  nav?: SiteNavItem[];
-};
+import Section from "./Section.astro";
 
 const path = Astro.url.pathname;
-const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWith(href));
+const isActive = (href: string) =>
+  href === "/" ? path === "/" : path.startsWith(href);
 ---
 
 <header class="header">
@@ -17,8 +12,93 @@ const isActive = (href: string) => (href === "/" ? path === "/" : path.startsWit
     <a class="header__brand" href="/">
       <img src="/logo.svg" alt="CAKE conf logo" width="140" height="140" />
     </a>
-    <a href="/tickets">
-      <Button class="success-btn">Get tickets</Button>
-    </a>
+    <div class="header__buttons">
+      <a href="/tickets">
+        <Button class="success-btn">Get tickets</Button>
+      </a>
+      <button class="menu-button">MENU</button>
     </div>
+  </div>
+  <ul class="menu-items hideMenu">
+    <li class="menu-item section__inner">
+      <a href="/">Home</a>
+    </li>
+    <li class="menu-item section__inner">
+      <a href="/about">About CAKE</a>
+    </li>
+    <li class="menu-item section__inner">
+      <a href="/tickets">Tickets</a>
+      </li>
+    </ul>
 </header>
+
+<style>
+  .header {
+    position: relative;
+    z-index: 100;
+  }
+  .header__buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-right: 0;
+  }
+
+  .menu-items {
+    position: absolute;
+    top: 100%; /* starts at the bottom edge of the header */
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: black;
+    padding: var(--space-5) var(--space-4);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu-button {
+    border: none;
+    background: none;
+    color: var(--fg);
+    cursor: pointer;
+  }
+
+  .menu-item {
+    font-size: 60px;
+    list-style: none;
+    line-height: 0.9;
+  }
+
+  .menu-item:hover {
+    color: var(--main-green);
+    cursor: pointer;
+  }
+
+  .hideMenu {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .menu-item { font-size: 48px; }
+  }
+  
+</style>
+
+<script>
+  const menu = document.querySelector(".menu-items");
+  const menuButton = document.querySelector(".menu-button");
+
+  const toggleMenu = () => {
+    if (menu?.classList.contains("hideMenu")) {
+      menu?.classList.remove("hideMenu");
+      if (menuButton) menuButton.textContent = "CLOSE MENU";
+    } else {
+      menu?.classList.add("hideMenu");
+      if (menuButton) menuButton.textContent = "MENU";
+    }
+  };
+
+  menuButton?.addEventListener("click", toggleMenu);
+</script>
