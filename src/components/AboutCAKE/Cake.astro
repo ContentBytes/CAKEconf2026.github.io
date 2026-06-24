@@ -1,29 +1,42 @@
+---
+import SpeakerImg from "../../assets/images/about/wojtek.png"
+import StageImg from "../../assets/images/about/stage.png"
+import DonutImg from "../../assets/images/about/donut.png"
+import AudienceImg from "../../assets/images/about/people.png"
+import NetworkingImg from "../../assets/images/about/networking.png"
+---
+
 <section class="section background">
   <div class="section__inner container">
     <h2>What's in the cake?</h2>
     <p>CAKE conf is a community-powered conference, organized by the Content Bytes Foundation.</p>
     <p>We are celebrating all things content: from UX writing to AI, from documentation to storytelling, from accessibility to managing content teams. We bring together content enthusiasts from different backgrounds to share insights, spark ideas, and build a more connected content ecosystem.</p>
     <p>CAKE conf is a non-profit project, which means that all proceeds from the tickets fuel the conference experience.</p>
-    <div>
-      <div>
+    <div class="tiles">
+      <div class="tile">
+        <img src={SpeakerImg.src} alt="One of speakers at CAKE conf signing his book" class="img" />
         <h3>Workshops</h3>
-        <p>Workshops give the participants the tools and mentorship to master new content skills hands on.</p>
+        <p class="desc-text">Workshops give the participants the tools and mentorship to master new content skills hands on.</p>
       </div>
-      <div>
+      <div class="tile">
         <h3>Speakers</h3>
-        <p>Skilled speakers are key to delivering topics that are not only deeply informative but also genuinely entertaining.</p>
+        <p class="desc-text">Skilled speakers are key to delivering topics that are not only deeply informative but also genuinely entertaining.</p>
+        <img src={StageImg.src} alt="One of speakers at CAKE conf speaking on the stage" class="img reverse" />
       </div>
-      <div>
+      <div class="tile">
+        <img src={AudienceImg.src} alt="One of speakers at CAKE conf speaking on the stage" class="img" />
         <h3>Talks</h3>
-        <p>Talk topics range from accessibility, AI, content creation and testing to content and team management.</p>
+        <p class="desc-text">Talk topics range from accessibility, AI, content creation and testing to content and team management.</p>
       </div>
-      <div>
+      <div class="tile">
         <h3>Diverse audience</h3>
-        <p>Perspectives from tech writing, UX design, AI, development,and content management stir up some exciting conversations.</p>
+        <p class="desc-text">Perspectives from tech writing, UX design, AI, development,and content management stir up some exciting conversations.</p>
+        <img src={NetworkingImg.src} alt="One of speakers at CAKE conf speaking on the stage" class="img reverse" />
       </div>
-      <div>
+      <div class="tile">
+        <img src={DonutImg.src} alt="One of speakers at CAKE conf speaking on the stage" class="img" />
         <h3>Networking</h3>
-        <p>Networking is the heart of our event! Breaks mean swapping thoughts,sparking new ideas, and even kickstarting exciting projects!</p>
+        <p class="desc-text">Networking is the heart of our event! Breaks mean swapping thoughts,sparking new ideas, and even kickstarting exciting projects!</p>
       </div>
     </div>
   </div>
@@ -43,4 +56,36 @@
   h3 {
     text-transform: uppercase;
   }
+
+  .tiles {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 30px;
+  }
+  .tile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .desc-text {
+    font-size: 14px; !important
+  }
+
+  .img {
+    width: 160px;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .tiles {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .reverse {
+      order: -1;
+    }
+  }
+
 </style>
