@@ -3,7 +3,6 @@ import Button from "../Button.astro";
 import { allUrls } from "../../assets/allUrls.js";
 
 const ticketsGroupLink = allUrls.ticketsGroupLink;
-const earlyBirdTicketLink = allUrls.earlyBirdTicketLink;
 ---
 
 <section class="section background">
@@ -11,22 +10,22 @@ const earlyBirdTicketLink = allUrls.earlyBirdTicketLink;
     <div class="prices">
       <div class="column">
         <p>Individual ticket</p>
-        <p class="price">400 PLN</p>
+        <p class="price"><s>400 PLN</s></p>
         <div class="details">
           <div>
             <p>Tickets exempt from VAT, the price you see is the price you pay.</p>
             <p>You can request a name or corporate invoice during payment.</p>
           </div>
-          <div class="button-container">
+          <!-- <div class="button-container">
             <a href={earlyBirdTicketLink} target="_blank" rel="noopener noreferrer">
               <Button class="success-btn">Buy ticket</Button>
             </a>
-          </div>
+          </div> -->
       </div>
     </div>
       <div class="column">
         <p>Group tickets (4+)</p>
-        <p class="price">360 PLN</p>
+        <p class="price"><s>360 PLN</s></p>
         <div class="details">
           <div>
         <p>Tickets exempt from VAT, the price you see is the price you pay.</p>
@@ -34,11 +33,11 @@ const earlyBirdTicketLink = allUrls.earlyBirdTicketLink;
         <p>To buy group tickets, fill in the form.</p>
         <p>We will send you the payment details and the collective invoice.</p>
       </div>
-        <div class="button-container">
+        <!-- <div class="button-container">
           <a href={ticketsGroupLink} target="_blank" rel="noopener noreferrer">
             <Button class="success-btn">Fill form</Button>
           </a>
-        </div>
+        </div> -->
         </div>
       </div>
   </div>
