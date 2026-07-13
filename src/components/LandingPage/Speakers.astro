@@ -1,14 +1,15 @@
 ---
 import Button from "../Button.astro"
 import { allUrls } from "../../assets/allUrls.js";
-
-const callForSpeakersLink = allUrls.callForSpeakersLink;
 ---
 
 <section class="section speakers background">
   <div class="section__inner">
     <h2>Speakers</h2>
     <p>By bringing together speakers from all kinds of professional backgrounds, we’re creating an agenda packed with fresh knowledge you won’t find anywhere else.</p>
+    <a href="/speakers">
+      <Button class="success-btn">View all speakers</Button>
+    </a>
   </div>
 </section>
 

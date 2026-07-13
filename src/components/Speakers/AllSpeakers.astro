@@ -1,0 +1,80 @@
+---
+import JakubImg from "../../assets/speakers/jakub-andrzejewski.png";
+import MagdalenaImg from "../../assets/speakers/magdalena-pociecha.png";
+import ScottImg from "../../assets/speakers/scott-deloach.png";
+import ThomasImg from "../../assets/speakers/thomas-bro-rasmussen.png";
+
+const imgs: Record<string, ImageMetadata> = {
+  jakub: JakubImg,
+  magdalena: MagdalenaImg,
+  scott: ScottImg,
+  thomas: ThomasImg,
+};
+
+const speakers = [
+  {
+    id: "jakub",
+    name: "Jakub Andrzejewski",
+    title: "Full-Stack Developer, Educator",
+  },
+  {
+    id: "magdalena",
+    name: "Magdalena Pociecha",
+    title: "UX Designer",
+  },
+  {
+    id: "scott",
+    name: "Scott Deloach",
+    title: "Content Experience Expert",
+  },
+  {
+    id: "thomas",
+    name: "Thomas Bro-Rasmussen",
+    title: "Labeling Manager GN Hearing",
+  },
+];
+---
+
+<section class="section background">
+  <div class="section__inner">
+    <div class="speakers">
+      {speakers.map((speaker) => (
+        <div class="speaker">
+          <img src={imgs[speaker.id].src} alt={speaker.name} class="picture" />
+          <div class="speaker-details">
+            <h3>{speaker.name}</h3>
+            <p>{speaker.title}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 100px 0;
+  }
+
+  .speakers {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+  .picture {
+    max-height: 450px;
+  }
+
+  .speaker-details {
+    padding-top: 24px;
+  }
+</style>

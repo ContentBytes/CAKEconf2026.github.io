@@ -27,6 +27,9 @@ const isActive = (href: string) =>
       <a href="/about">About CAKE</a>
     </li>
     <li class="menu-item section__inner">
+      <a href="/speakers">Speakers</a>
+    </li>
+    <li class="menu-item section__inner">
       <a href="/tickets">Tickets</a>
       </li>
     <li class="menu-item section__inner">
@@ -96,7 +99,7 @@ const isActive = (href: string) =>
   const toggleMenu = () => {
     if (menu?.classList.contains("hideMenu")) {
       menu?.classList.remove("hideMenu");
-      if (menuButton) menuButton.textContent = "CLOSE MENU";
+      if (menuButton) menuButton.textContent = "CLOSE";
     } else {
       menu?.classList.add("hideMenu");
       if (menuButton) menuButton.textContent = "MENU";
