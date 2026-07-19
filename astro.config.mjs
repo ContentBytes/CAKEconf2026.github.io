@@ -8,5 +8,6 @@ export default defineConfig({
     provider: fontProviders.fontsource(),
     name: "Space Grotesk",
     cssVariable: "--font-space-grotesk",
+    subsets: ["latin", "latin-ext"],
   }]
 });
