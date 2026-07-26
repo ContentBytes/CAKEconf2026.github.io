@@ -80,10 +80,21 @@ const speakers = [
   }
 
   .speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 80px;
+  }
+
+  .speaker {
     display: flex;
-    flex-direction: row;
-    gap: 40px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Right column reversed */
+  .speaker:nth-child(even) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
   }
 
   h3 {
@@ -93,9 +104,16 @@ const speakers = [
 
   .picture {
     max-height: 506px;
+    max-width: 480px;
   }
 
-  .speaker-details {
-    padding-top: 24px;
+  @media (max-width: 1080px) {
+    .speakers {
+      grid-template-columns: 1fr;
+    }
+
+    .speaker:nth-child(even) {
+      flex-direction: column;
+    }
   }
 </style>
