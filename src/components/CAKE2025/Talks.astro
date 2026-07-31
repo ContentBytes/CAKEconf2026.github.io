@@ -1,0 +1,74 @@
+---
+import { talks } from "../../data/cake2025.json";
+
+import SergioImg from "../../assets/images/2025/speakers/sergio-valero-notari.png";
+import AnnaImg from "../../assets/images/2025/speakers/anna-dulny-leszczynska.png";
+import WojtekImg from "../../assets/images/2025/speakers/wojtek-kutyla.png";
+import AleksandraImg from "../../assets/images/2025/speakers/aleksandra-wieczorek-konieczko.png";
+
+const imgs: Record<string, ImageMetadata> = {
+  sergio: SergioImg,
+  anna: AnnaImg,
+  wojtek: WojtekImg,
+  aleksandra: AleksandraImg,
+};
+---
+
+<section class="section background">
+  <div class="section__inner">
+    <h2>Talks</h2>
+    <p>Have a glimpse at the speakers the CAKE conf hosted in 2025 and get inspired by the topics they presented.</p>
+    <div class="talks">
+      {
+        talks.map((talk, index) => (
+        <div class={`row ${index % 2 === 1 ? "reversed" : ""}`}>
+            <img src={imgs[talk.id].src} alt={talk.topic} class="picture" />
+            <div class="topic-and-desc">
+              <h3>{talk.topic}</h3>
+              <p>{talk.speaker}</p>
+              <p>{talk.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 100px 0;
+  }
+
+  .picture {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px 0;
+  }
+
+  .row:nth-child(even) { 
+    flex-direction: row-reverse; 
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+
+    .row:nth-child(even) { 
+      flex-direction: column;
+    }
+  }
+</style>

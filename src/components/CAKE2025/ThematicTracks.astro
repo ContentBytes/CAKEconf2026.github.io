@@ -1,5 +1,5 @@
 ---
-import Tracks from "../../data/tracks2025.json";
+import { tracks } from "../../data/cake2025.json";
 ---
 
 <section class="section background">
@@ -26,7 +26,7 @@ import Tracks from "../../data/tracks2025.json";
     </p>
     <div>
       {
-        Tracks.map((track) => (
+        tracks.map((track) => (
           <div class="tracks">
             <h3>{track.track}</h3>
             <p>{track.description}</p>

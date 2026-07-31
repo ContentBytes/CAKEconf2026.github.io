@@ -1,0 +1,54 @@
+{
+  "tracks": [
+    {
+      "track": "AI",
+      "description": "Apply AI strategies to your content."
+    },
+    {
+      "track": "Management",
+      "description": "Manage teams, implement strategies, build confidence"
+    },
+    {
+      "track": "Storytelling",
+      "description": "Discover tools, try out approaches, improve your docs"
+    },
+    {
+      "track": "Documentation",
+      "description": "Discover tools, try out approaches, improve your docs"
+    },
+    {
+      "track": "UX Writing",
+      "description": "Boost user experience with well-crafted content"
+    },
+    {
+      "track": "Accessibility",
+      "description": "Make your content accessible to your users."
+    }
+  ],
+  "talks": [
+    {
+      "id": "sergio",
+      "topic": "Metrics in Content Design. Numbers are probably the most important words",
+      "speaker": "Sergio Valero Notari",
+      "description": "Metrics are a core part of how Content Designers make smarter decisions, not just tools for analysts. In this talk, we'll explore how to define, gather, interpret and own your own metrics, even without complete access to data tools. We'll also cover counter metrics, common testing pitfalls, and how to work with analysts to get the full story. You’ll also learn how to design your metrics for each and every new project. Because great content isn't just about words. It's about results."
+    },
+    {
+      "id": "anna",
+      "topic": "How can content design support accessibility?",
+      "speaker": "Anna Dulny-Leszczyńska",
+      "description": "Ensuring the accessibility of a digital product is the responsibility of the entire team. However, much can be achieved through well-crafted content design. In this power talk, you’ll learn how small changes in content can enhance your product’s accessibility. The presentation will explore various use cases that benefit from clear writing and offer actionable guidelines that you can apply to your everyday work."
+    },
+    {
+      "id": "wojtek",
+      "topic": "Accessible web content: things you might not have thought about",
+      "speaker": "Wojtek Kutyła",
+      "description": "Contrary to popular belief, web accessibility is not something reserved for web developers or UX folks. It's paramount to write good, accessible content, from tiny messages to large, elaborate pieces of copy. To have a fulfilling and pleasant dialogue with our users, regardless of who or where they are. What does this even mean? How can we do it? And what are some of the things related to this subject that you might not have thought about before? Let's focus on creating accessible, fulfilling experiences in the context of how we write for the web"
+    },
+    {
+      "id": "aleksandra",
+      "topic": "Feedback is everything",
+      "speaker": "Aleksandra Wieczorek-Konieczko",
+      "description": "Let's talk about how we talk about each other's work. In the content world, feedback is currency. In the workplace, it's the force that fuels careers, for better or worse. For content professionals, it's everything. In my talk, I'll skip the usual technical review guidelines to explore the subtle ways feedback can shape human brains and reinforce the unspoken workplace dynamics. I'll share my personal feedback manifesto, grounded in neuroscience, psychology, philosophy, and some hard-won experience, to start the conversation about what the 'F' word really means. Together, we'll look at how to support clarity without triggering defensiveness, build others up without posturing, and create trust in place of fear."
+    }
+  ]
+}
