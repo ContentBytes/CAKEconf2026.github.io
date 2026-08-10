@@ -1,0 +1,39 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import data from "../../data/cake2026.json";
+import SingleSpeaker from "../../components/Speakers/SingleSpeaker.astro";
+
+const speakerOne = data.speakers.find(
+  (speaker) => speaker.id === "monika-skoneczna",
+);
+if (!speakerOne) throw new Error("Speaker not found");
+
+const speakerTwo = data.speakers.find(
+  (speaker) => speaker.id === "gergely-garai",
+);
+if (!speakerTwo) throw new Error("Speaker not found");
+
+import MonikaImg from "../../assets/speakers/monika-skoneczna.png";
+import GergelyImg from "../../assets/speakers/gergely-garai.png";
+---
+
+<Base
+  title={speakerOne.topic}
+  description={speakerOne.bio}
+  canonicalPath={`/speakers/${speakerOne.id}-and-${speakerTwo.id}`}
+>
+  <Hero title={speakerOne.topic} />
+  <SingleSpeaker
+    abstract={speakerOne.abstract}
+    name={speakerOne.name}
+    bio={speakerOne.bio}
+    image={MonikaImg}
+    showAgendaLink={false}
+  />
+  <SingleSpeaker
+    name={speakerTwo.name}
+    bio={speakerTwo.bio}
+    image={GergelyImg}
+  />
+</Base>

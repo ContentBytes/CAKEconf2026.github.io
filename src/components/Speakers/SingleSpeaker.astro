@@ -1,0 +1,68 @@
+---
+import SectionBackground from "../common/SectionBackground.astro";
+
+const { abstract, bio, name, image, showAgendaLink = true } = Astro.props;
+---
+
+<SectionBackground color="grey">
+  {abstract && <p class="abstract">{abstract}</p>}
+  <div class="speaker-details">
+    <img src={image.src} alt={name} class="speaker-image" />
+    <div class="name-and-bio">
+      <p class="name">{name}</p>
+      <p>{bio}</p>
+    </div>
+  </div>
+  {
+    showAgendaLink && (
+      <div class="agenda-link">
+        <a href="/agenda">Back to agenda</a>
+      </div>
+    )
+  }
+</SectionBackground>
+
+<style>
+  .abstract {
+    padding-bottom: 100px;
+  }
+
+  .name {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .speaker-details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  @media (max-width: 1080px) {
+    .speaker-details {
+      flex-direction: column;
+    }
+  }
+
+  .speaker-image {
+    max-width: 180px;
+    height: 180px;
+  }
+
+  .agenda-link {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+  }
+
+  .agenda-link:hover {
+    color: var(--main-green);
+  }
+
+  .agenda-link a {
+    text-decoration: none;
+  }
+</style>

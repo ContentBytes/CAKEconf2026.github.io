@@ -1,0 +1,33 @@
+---
+const { time, type } = Astro.props;
+---
+
+<div class="break">
+  <div class="time">{time}</div>
+  <div class="type">{type}</div>
+</div>
+
+<style>
+  .break {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .break {
+      flex-direction: column;
+    }
+  }
+
+  .time {
+    min-width: 270px;
+    font-size: 48px;
+  }
+
+  .type {
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+
+</style>

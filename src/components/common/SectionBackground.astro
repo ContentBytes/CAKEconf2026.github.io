@@ -1,0 +1,31 @@
+---
+const { color } = Astro.props;
+---
+
+<section class:list={["section", `background--${color}`]}>
+  <div class="section__inner container">
+    <slot />
+  </div>
+</section>
+
+<style>
+  .background--grey {
+    background-color: var(--bg-grey);
+    color: #000;
+  }
+  .background--white {
+    background-color: var(--bg-white);
+    color: #000;
+  }
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* Drop the double gap between sections of the same color */
+  .background--grey + .background--grey .section__inner,
+  .background--white + .background--white .section__inner {
+    padding-top: 0;
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+const { time, topic, speaker, label, url } = Astro.props;
+---
+
+<div class="session">
+  <div class="time">{time}</div>
+  <div class="session-details">
+    <div class="topic">
+      {url ? <a href={`/speakers/${url}`}>{topic}</a> : topic}
+    </div>
+    {label && <div class="label">{label}</div>}
+    {speaker && <div class="speaker">{speaker}</div>}
+  </div>
+</div>
+
+<style>
+  .session {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  @media (max-width: 768px) {
+    .session {
+      flex-direction: column;
+    }
+  }
+
+  .session-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .time {
+    font-size: 48px;
+    min-width: 270px;
+  }
+
+  .topic {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    align-self: flex-start;
+    padding: 4px 8px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--main-green);
+  }
+</style>

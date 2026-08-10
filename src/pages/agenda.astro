@@ -1,0 +1,75 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+
+import DayOne from "../components/Agenda/DayOne.astro";
+import DayTwo from "../components/Agenda/DayTwo.astro";
+
+const title = "Agenda";
+const description = "Agenda for CAKE conf 2026";
+---
+
+<Base title={title} description={description} canonicalPath="/agenda">
+  <Hero title={title}>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-day="1" role="tab" aria-selected="true"
+        >DAY 1</button
+      >
+      <button class="tab" data-day="2" role="tab" aria-selected="false"
+        >DAY 2</button
+      >
+    </div>
+  </Hero>
+
+  <div class="day active" data-day="1" role="tabpanel"><DayOne /></div>
+  <div class="day" data-day="2" role="tabpanel"><DayTwo /></div></Base
+>
+
+<style>
+  .tabs {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .tab {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .tab:hover {
+    color: var(--main-green);
+  }
+
+  .tab.active {
+    color: var(--main-green);
+  }
+
+  .day:not(.active) {
+    display: none;
+  }
+</style>
+
+<script>
+  const tabs = document.querySelectorAll<HTMLButtonElement>(".tab");
+  const days = document.querySelectorAll<HTMLElement>(".day");
+
+  const showDay = (day: string) => {
+    tabs.forEach((t) => {
+      const on = t.dataset.day === day;
+      t.classList.toggle("active", on);
+      t.setAttribute("aria-selected", String(on));
+    });
+    days.forEach((d) => d.classList.toggle("active", d.dataset.day === day));
+  };
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => showDay(tab.dataset.day!));
+  });
+</script>
