@@ -8,7 +8,8 @@
       "bio": "Jakub Andrzejewski is a Full-Stack Developer, international speaker, and technology educator specializing in modern web development, web performance, and accessibility. He has extensive experience building scalable applications with Vue, Nuxt, Node.js, and headless CMS platforms, helping engineering teams deliver high-quality products and better user experiences. As an active member of the developer community, Jakub regularly shares practical insights through conference talks, workshops, technical articles, and open-source contributions. Outside of tech, Jakub is a Dungeon Master for Dungeons & Dragons, enjoys traveling, follows Formula 1, and is always happy to discuss video games or the latest movies.",
       "topic": "Web Fiction: When Accessibility Meets Performance",
       "abstract": "Imagine a world where web performance and accessibility are not separate disciplines, but two forces shaping one coherent product experience.\n\nIn this talk, we explore that shared space—where speed and inclusivity are designed together, not separately. From a developer’s view on performance to a designer’s approach to accessibility, we connect both perspectives into a single way of thinking about the web",
-      "label": "Accessibility"
+      "label": "Accessibility",
+      "slug": "jakub-andrzejewski-and-magdalena-pociecha"
     },
     {
       "id": "magdalena-pociecha",
@@ -16,7 +17,8 @@
       "linkedin": "https://www.linkedin.com/in/magdalena-pociecha/",
       "title": "UX Designer at Łukasiewicz Research Network - Poznań Institute of Technology",
       "bio": "Magdalena Pociecha is a UX designer specializing in designing digital products for the public sector, collaborating with the Ministry of Economic Development and Technology to create experiences that are clear, useful, and accessible to everyone.She is currently expanding her expertise in accessibility auditing to gain a deeper understanding of user barriers and design more inclusive, user-friendly digital products. Outside of work, she enjoys traveling and getting lost in a good fantasy book. Her latest adventures took her to Japan and South Korea, and she is currently planning a hiking trip to Canada. She is also a fan of cooperative console games, board games, and Dungeons & Dragons.",
-      "topic": "Web Fiction: When Accessibility Meets Performance"
+      "topic": "Web Fiction: When Accessibility Meets Performance",
+      "slug": "jakub-andrzejewski-and-magdalena-pociecha"
     },
     {
       "id": "kalina-tyrkiel-szymanska",
@@ -27,7 +29,8 @@
       "bio": "UX writer by trade and psychologist by training, now Senior Content Designer working on AI experiences at Zendesk. Experienced trainer, lecturer, and consultant in UX writing; creator of Poland's first AI in UX writing course. After hours: Instagram foodie, local culinary evangelist, fueled by hot sauce and filter coffee.",
       "topic": "Designing the AI experience: what's old, what's new?",
       "abstract": "Traditional content design assumed predictable, hard-coded copy. Gen AI totally flips the script. While interfaces are shifting toward prompting and conversational flows, the foundational rules of great content still stand.\n\nAs both a psychologist and a content designer at Zendesk, I’ll break down what we need to reinvent and what we should protect. We’ll look at the wild world of prompt-driven UX, while proving why plain-language principles remain our best tool against chaos. We’ll also chat about the psychology of AI anthropomorphism, managing expectations, and tackling cognitive biases. Come see why content folks hold the ultimate keys to building ethical, clear, and deeply human AI experiences.",
-      "label": "AI"
+      "label": "AI",
+      "slug": "kalina-tyrkiel-szymanska"
     },
     {
       "id": "justin-gagne",
@@ -37,7 +40,8 @@
       "bio": "Justin teaches design students to write and talk about their work in a way anyone can understand, not like they're defending a thesis. He works with students at Prague School of Creative Communication (VŠKK), where he focuses on design writing, brand voice, and getting them to stop writing like institutions.\n\nHe works in content design and UX writing at Apify, where he builds tools to catch the kind of language that sounds professional but means nothing.\n\nHe thinks of language as a craft, not only functional, but intentional. At the end of the day, broadly speaking, he has a lot to say about the words we inherit, repeat, and either overthink or overuse.",
       "topic": "Copy that, words we didn’t choose",
       "abstract": "We didn't learn to sound like this from the robots. We learned it from legal documents, academic papers, and technical documentation. The kind of institutional writing that taught us to mistake impersonality for authority. Language models trained on that same writing and handed it back to us, amplified. Now we're mimicking it, without noticing, and passing it on.\n\nThis talk is about that loop: where it comes from, what it costs, and how to interrupt it. It's for anyone who has started to feel their words don't quite sound like their own anymore.",
-      "label": "AI"
+      "label": "AI",
+      "slug": "justin-gagne"
     },
     {
       "id": "marzena-cudecka",
@@ -47,7 +51,8 @@
       "bio": "Marzena Cudecka has over 10 years of experience in technical documentation and knowledge sharing. She is passionate about making complex products easier to understand and building knowledge ecosystems that foster learning and collaboration. She is also interested in how emerging technologies, including AI, are shaping documentation and knowledge sharing practices. Marzena enjoys discussing insights from real projects, exchanging ideas, and broadening her perspective through new connections and continuous learning. Outside of work, she finds inspiration in travel, sailing, and experiences that bring new perspectives and fresh ideas.",
       "topic": "From Documentation to Certification: Building a Knowledge Hub",
       "abstract": "Certification programs can reveal a lot about the strengths and weaknesses of your documentation. In this session, I'll share lessons learned from building a certification program based on existing documentation and how that work is shaping the development of learning paths and a broader knowledge hub. We'll discuss how to structure content for learning, identify gaps, define learning objectives, and create a clearer path from product documentation to user expertise.",
-      "label": "Documentation"
+      "label": "Documentation",
+      "slug": "marzena-cudecka"
     },
     {
       "id": "pawel-woznikowski",
@@ -57,7 +62,8 @@
       "topic": "How to survive and then thrive as a small documentation team",
       "bio": "Technical writer in IT with a background in technical translation. In his work, he wears many hats by handling API references, developer and user guides, UI copy, and more. He enjoys strategising about content and putting his hands into creating it. Aspiring technical content custodian. In his free time, he's an avid fan of tabletop wargames, history, and hiking.",
       "abstract": "In small documentation teams, you face various challenges. Some days you curate API references and UI guides, and then you jump to lead a big content migration project; you set up documentation processes for matters big and small, while also being the go-to person for handling UI copy. You’ve got a lot of freedom, but having too many irons in too many fires can burn you out. This presentation is a journey of a technical writer working first solo and then as a duo in Voucherify, a medium-sized global SaaS company hailing from Katowice, Poland. In this journey, you’ll learn how to manage priorities, how scarcity drives documentation innovation, and how to spot an approaching breaking point. Listen to hard-learned lessons from projects that succeeded, tasks that failed, and processes that worked until they didn’t. Whether you’re working solo, in a small team, or you just want to organise your own work in a larger team, come and listen to some tips and real-life stories that may make your documentation journey smoother.",
-      "label": "Management"
+      "label": "Management",
+      "slug": "pawel-woznikowski"
     },
     {
       "id": "mateusz-krol",
@@ -67,7 +73,8 @@
       "bio": "Mateusz has spent almost 4 years working as a technical writer in the telco industry and the world of internet service providers. Previously, he worked as an English teacher, a PL-EN phone interpreter (supporting healthcare and emergency services), and a corporate docs pusher. He holds an MA in English Philology with a specialization in Translation Studies. Outside of work, he loves retro video games and is an avid reader and a culture-lover (art, TV series, podcasts and many more). Cooking and baking are among his greatest passions. Quite a private person, so he maintains very little online presence.",
       "topic": "On becoming a Slop Janitor: An enemies to lovers story",
       "abstract": "The talk shares a perspective of a technical writer who started out as a passionate AI/LLM hater, has slowly come to terms with the gloomy reality, and is now at the forefront of introducing AI workflows in their company, while staying as far away as possible from the tech-bro attitude. The goal is to present concrete, real-life examples and quick case studies of how AI completely reshaped a writer's job. This is a story of unleashing AI (mostly Claude Code) to deal with thousands of files of legacy content, full-on release notes automation, branded docs formatting, UI texts scraping, auto-updating reference docs, and vibe-coding internal tools. Full creative freedom, countless hours and tokens spent on AI adoption have allowed the author to form an opinionated conclusion of whether AI is here to stay.",
-      "label": "AI"
+      "label": "AI",
+      "slug": "mateusz-krol"
     },
     {
       "id": "ian-freeman",
@@ -77,7 +84,8 @@
       "bio": "Hi, I'm Ian. Before moving into the IT world, I worked as a marketing consultant. I then made the leap into technical writing and now work as a Senior Technical Writer for Box. My professional interests include content strategy, information architecture, making documentation measurable, and automating processes to free up time for work that better serves our users. I'm originally from Scotland, so hopefully my accent is understandable!",
       "topic": "How documentation can become a growth engine",
       "abstract": "This talk argues that AI doesn't replace the technical writer; it frees the writer to do the work that actually moves business metrics. When AI takes over the repeatable production - API reference generation, changelog cadence, content scaffolding - the time you get back goes into the strategic work machines can't do: SEO and discoverability, conversion optimization, and information architecture that turns scattered pages into a funnel. Through live demos, you'll watch AI agents act on content directly, build a working integration, and pull structured data straight from documents. Then you'll see those agents at work on our documentation, and how making content discoverable for them drove measurable growth. You'll leave with a practical model for treating documentation as platform strategy, and insight into where writers add the most value when agents are part of the audience.",
-      "label": "Documentation"
+      "label": "Documentation",
+      "slug": "ian-freeman"
     },
     {
       "id": "thomas-bro-rasmussen",
@@ -87,7 +95,8 @@
       "bio": "Thomas graduated as M.Sc. in human physiology, biochemistry, and biology, but has spent the past 30 years in the world of computer graphics and communication. He has equally divided his expertise between design, training, and development. His expertise ranges from the intricacy of adjusting a glyph in a font to the million-page technical documentation.",
       "topic": "Fact, Fiction, and the Future of AI in Technical Communication",
       "abstract": "AI didn’t quietly enter the market — it steamrolled into it. Almost overnight, it became impossible to ignore. Every company wanted a strategy, every product suddenly needed an AI angle, and every employee was expected to have an opinion, a use case, or preferably both.\n\nA few years in, the mood has shifted. The hype is still loud, but reality is starting to catch up. AI is genuinely powerful, but it is also over trusted, poorly understood, and often applied where it has no business being used. This presentation is about cutting through the noise. Not to worship AI and not to dismiss it, but to be honest about where we are. What works today? What keeps failing? And, how do you stay relevant when the market rewards speed, experimentation, and confidence — even when the technology is still unreliable?",
-      "label": "AI"
+      "label": "AI",
+      "slug": "thomas-bro-rasmussen-and-scott-deloach"
     },
     {
       "id": "scott-deloach",
@@ -95,7 +104,8 @@
       "title": "Content Experience Expert",
       "linkedin": "https://www.linkedin.com/in/scottdeloach/",
       "bio": "Scott is passionate about technical content, learning, training, and helping his clients succeed. He has 30 years experience as a technical writer, instructional designer, trainer, and UX architect, and he has provided consulting and training for over 100 companies and government agencies around the world. He is a frequent speaker at technical content and user assistance conferences, and he has received four Best of Show awards from STC for his work. Scott is the author of MadCap Flare 2021: The Definitive Guide, HTML5 to the Point, and CSS to the Point. He holds a masters degree in Technical and Scientific Communication from Miami University (Ohio), and he is a proud STC Fellow.",
-      "topic": "Fact, Fiction, and the Future of AI in Technical Communication"
+      "topic": "Fact, Fiction, and the Future of AI in Technical Communication",
+      "slug": "thomas-bro-rasmussen-and-scott-deloach"
     },
     {
       "id": "malgorzata-lis",
@@ -105,7 +115,8 @@
       "bio": "She has an academic background in Computer Science and plans to continue her education with a focus on project management. She currently works at IBM as a Technical Writer and has nearly three years of professional experience in technical documentation. Her work combines technical knowledge, structured thinking, and communication skills in a constantly evolving field.",
       "topic": "AI as a Skill: Let’s Stop and Think Beyond the Prompt in Learning, Work, and Docs",
       "abstract": "This presentation explores AI as a professional skill from the perspective of a young adult who entered higher education and the job market as generative AI became widely available. Drawing on academic experience and work in the IT industry, it examines how AI is reshaping learning, early career expectations, and technical documentation.\n\nTools such as large language models and AI agents can help technical writers produce content faster and streamline parts of their workflow. However, they also introduce new challenges. AI does not eliminate the need for expertise; instead, it changes the skills expected from both newcomers and experienced professionals. Using AI may become as common as using other workplace tools, but effective use still requires understanding, judgment, and responsibility.\n\nThe presentation considers expectations surrounding AI agents, the development of AI tools, and the importance of approaching this changing environment critically rather than treating AI as a simple solution.",
-      "label": "AI"
+      "label": "AI",
+      "slug": "malgorzata-lis"
     },
     {
       "id": "monika-skoneczna",
@@ -115,7 +126,8 @@
       "bio": "Monika S. is interested in the way people process information and in figuring out what happens when the brain isn't braining the way it should or could. She likes creating and experimenting with content that helps people understand, use, and trust the information they encounter. Her interests include information design, screen readers, accessibility, and the relationship between language and human behaviour. She strongly believes that most problems can be solved with curiosity, practical thinking, and a reliable supply of spaghetti and coffee, although not necessarily in that order.",
       "topic": "Docs that rewire the brain: designing documentation for how people learn",
       "abstract": "We tend to think of documentation as a way to transfer information. But in reality, it does something much more powerful: it reshapes how people think. Every piece of documentation influences how users build mental models, process complexity, and learn new systems. Drawing on concepts from neuroplasticity and cognitive science, this talk explores how documentation can either support or hinder the brain’s ability to learn. We’ll look at how cognitive load, structure, and sequencing affect understanding and how techniques like progressive disclosure, intentional friction, and error-driven learning can make documentation more effective. This isn’t about writing more clearly. It’s about designing documentation that works with the brain, not against it.",
-      "label": "Documentation"
+      "label": "Documentation",
+      "slug": "monika-skoneczna-and-gergely-garai"
     },
     {
       "id": "gergely-garai",
@@ -124,7 +136,8 @@
       "linkedin": "https://www.linkedin.com/in/gergely-g-05173b140",
       "bio": "Gergely has spent two decades working for a major translation company in a plethora of positions. While translating several software products’ UI and documentation, he gradually got to know a good deal about technical writing. He’s now nearing the end of another decade in an official tech comm position at memoQ, a software company creating a translation management system. Recently, he became a member of the Initiative Committee of tekom Hungary (a volunteer position). He is a Budapest-based language nerd, a striving father of two, and an avid bike commuter, occasionally doing volunteer works for the Hungarian Cyclists’ Club. Nowadays he spends time discovering how to make his life easier with GenAI and getting on terms with his neurodivergent traits.",
       "topic": "Docs that rewire the brain: designing documentation for how people learn",
-      "abstract": "..."
+      "abstract": "...",
+      "slug": "monika-skoneczna-and-gergely-garai"
     },
     {
       "id": "aleksandra-kulga",
@@ -135,7 +148,8 @@
       "bio": "Aleksandra Kulga is a burnout coach and HR expert with over 15 years of international experience, including supporting global engineering and software teams in the IT industry. She has worked with organisations such as Credit Suisse and Siemens, helping leaders build healthier, more sustainable workplaces.\n\nShe specialises in burnout prevention, workplace wellbeing and organisational culture, combining evidence-based approaches with practical business experience. Aleksandra works with both individuals and companies. She helps professionals regain energy, purpose and engagement, and supports organisations through training, workshops and consulting on burnout prevention, early intervention and psychologically healthy leadership.\n\nDrawing on both an individual coaching perspective and a systemic organisational approach, she helps companies create work environments where employee wellbeing and business performance reinforce one another rather than compete.",
       "topic": "Counting down to Friday? How to tell a tough period from burnout",
       "abstract": "Knowledge work is intellectually demanding. Whether you're writing technical documentation, designing user experiences, building products or creating content, your work relies on focus, creativity and solving complex problems. But when deadlines, constant context switching and increasing demands become the norm, it can be difficult to tell a challenging period from burnout.",
-      "label": "Wellbeing"
+      "label": "Wellbeing",
+      "slug": "aleksandra-kulga"
     },
     {
       "id": "anastasiya-biaroza",
@@ -146,7 +160,8 @@
       "bio": "Anastasiya Biaroza is a Senior Technical Writer at Box, where she creates both product and developer documentation with a focus on clarity, usability, and user experience. She enjoys turning complex technical concepts into content that helps people get the most out of a product. Her work spans AI-powered features and developer tools, and she is passionate about making technology more accessible. Outside of work, Anastasiya enjoys traveling, playing tennis, and learning languages. A fun fact: she is currently on a 907-day Duolingo streak while learning German.",
       "topic": "Writing for Different Readers: When Your Audience Is Half Human, Half LLM",
       "abstract": "Nobody actually reads documentation. Humans skim it in predictable, well-studied eye-tracking patterns — and AI assistants don't read at all; they chop content into chunks and reassemble answers. So who are we really writing for? This talk looks at how human eyes move across a page and how large language models ingest that same page — and lands on a surprising payoff: the fixes are mostly the same. Descriptive headings, self-contained sections, and front-loaded meaning create both the \"layer-cake\" scan humans love and the clean chunks machines need. Good information architecture isn't two competing jobs. It's one practice that serves bothreaders at once. Grounded in real product/developer documentation, real traffic data, and concrete before/after changes from daily practice.",
-      "label": "Documentation"
+      "label": "Documentation",
+      "slug": "anastasiya-biaroza"
     },
     {
       "id": "monika-mrozek",
@@ -156,7 +171,8 @@
       "bio": "First and foremost, I am a content person - at heart. I believe that clear, targeted communication has the power to transform how people understand products, processes, and change. \n\nMy journey started in 2018 with not more than passion for creating meaningful technical content. Today I lead a Technical Documentation team at Splunk, helping people grow professionally, do their best work, and take pride in what they create.\n\nOver the years, I have also become increasingly interested in the human side of transformation — how teams adapt, how people experience change, how it is implemented and how we can make complex transitions easier to navigate. I see communication as one of the most powerful tools we have for building understanding, confidence, and alignment.",
       "topic": "Mind the gap: using Change Management techniques to navigate what's next",
       "abstract": "AI is changing the landscape of Technical Writing, and across our community many Writers are experiencing excitement and curiosity but also a lot of uncertainty, and concern about what this means for our roles. I would like to invite you to explore how Change Management principles - we will be using the ADKAR framework - can help us understand where we are, what we need, and how we move forward with intention. Rather than prescribing a single path or pushing endless upskilling, we will explore how to recognize our current mindset, identify gaps, and make intentional choices about what comes next. We will be taking an honest stock of our awareness, readiness, and confidence to approach AI-driven change with more clarity, direction, and control.",
-      "label": "Management"
+      "label": "Management",
+      "slug": "monika-mrozek"
     },
     {
       "id": "tomas-nosek",
@@ -166,7 +182,8 @@
       "bio": "Tomas Nosek leads the Scaled Customer Experience team at Apify, overseeing Support, Documentation, and Adoption. Over the past 10+ years he's led docs, customer education, and customer success teams at Kentico, Kontent.ai, and Apify — including three rebuilds of docs navigation, each one taught by the previous one's mistakes. Strong proponent of writing for the reader, even when it's inconvenient for the writer.",
       "topic": "We've been building docs nav for ourselves",
       "abstract": "When you fire up your new CRM and want to add a lead, do you think \"I need a tutorial\"? Probably not. You just want to add the lead. Yet most docs sites greet you with a menu of Guides, Tutorials, and References, forcing you to pick a format before you can find what you came for. Navigation hasn't kept up with how people look for things. With AI assistants now handling lookup, navigation has narrowed to one job: helping readers who don't know what they're searching for. And we're failing them. After rebuilding docs nav at three B2B SaaS companies, I'll show why Technical Writers keep optimizing for ourselves — clean content types, single source of truth, internal taxonomies — and the cost our readers and our companies pay for it. You'll leave knowing what mistakes to avoid, how to decide when building new navigation, and with a flowchart for designing navigation that serves the people using your docs, not the people writing them.",
-      "label": "Documentation"
+      "label": "Documentation",
+      "slug": "tomas-nosek"
     },
     {
       "id": "agnieszka-marzec",
@@ -176,7 +193,8 @@
       "bio": "I've been a technical writer for 17+ years — and I've spent the last few trying to automate myself out of the boring parts. Now working at the intersection of documentation and engineering, I build AI-powered systems that generate, update, and ship docs at the speed of the product teams I support.",
       "topic": "I Taught an AI to Write My Docs (So I Don't Have To)",
       "abstract": "Documentation is always the last thing to ship and the first thing customers notice when it's missing. As a sole technical writer supporting five engineering squads, I knew that keeping up wasn't a process problem. It was a scale problem.\n\nSo I built an agent to help. In this talk, I'll walk through how I designed and iterated on an AI-powered documentation generation system using the Claude API, GitHub Actions, and a Python agentic loop, running across multiple repositories and integrated into our existing CI/CD pipeline. The agent monitors code changes, generates documentation drafts, and flags what needs a human decision. My job shifts from writing everything to reviewing, testing, and publishing.\n\nI'll cover what works, what doesn't, and the unexpected lessons from handing a core part of my job to an AI: how to prompt for structure and consistency, how to handle the cases the agent gets wrong, and what it means for the technical writer role when the boring parts start automating themselves.",
-      "label": "AI"
+      "label": "AI",
+      "slug": "agnieszka-marzec"
     }
   ]
 }

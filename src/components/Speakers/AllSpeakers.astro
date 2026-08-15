@@ -13,30 +13,21 @@ const imgs: Record<string, ImageMetadata> = Object.fromEntries(
     module.default,
   ]),
 );
-
-const speakers = data.speakers.map((speaker) => ({
-  id: speaker.id,
-  name: speaker.name,
-  title: speaker.title,
-  image: imgs[speaker.id],
-}));
 ---
 
 <section class="section background">
   <div class="section__inner">
     <div class="speakers">
       {
-        speakers.map((speaker) => (
+        data.speakers.map((speaker) => (
           <div class="speaker">
-            <img
-              src={imgs[speaker.id].src}
-              alt={speaker.name}
-              class="picture"
-            />
-            <div class="speaker-details">
-              <h3>{speaker.name}</h3>
-              <p>{speaker.title}</p>
-            </div>
+            <Image src={imgs[speaker.id]} alt={speaker.name} class="picture" />
+            <a href={`/speakers/${speaker.slug}`}>
+              <div class="speaker-details">
+                <h3>{speaker.name}</h3>
+                <p>{speaker.title}</p>
+              </div>
+            </a>
           </div>
         ))
       }
@@ -72,6 +63,14 @@ const speakers = data.speakers.map((speaker) => ({
   h3 {
     text-transform: uppercase;
     font-size: 32px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--main-green);
   }
 
   .picture {
