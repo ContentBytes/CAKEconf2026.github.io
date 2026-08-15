@@ -1,7 +1,17 @@
 ---
 import SectionBackground from "../common/SectionBackground.astro";
+import InstagramIcon from "../../assets/icons/instagram.svg";
+import LinkedinIcon from "../../assets/icons/linkedin.svg";
 
-const { abstract, bio, name, image, showAgendaLink = true } = Astro.props;
+const {
+  abstract,
+  bio,
+  name,
+  image,
+  showAgendaLink = true,
+  linkedin,
+  instagram,
+} = Astro.props;
 ---
 
 <SectionBackground color="grey">
@@ -9,7 +19,21 @@ const { abstract, bio, name, image, showAgendaLink = true } = Astro.props;
   <div class="speaker-details">
     <img src={image.src} alt={name} class="speaker-image" />
     <div class="name-and-bio">
-      <p class="name">{name}</p>
+      <div class="name-and-icons">
+        <p class="name">{name}</p>
+        <div class="icons">
+        {linkedin && (
+          <a href={linkedin} target="_blank">
+            <LinkedinIcon class="icon" />
+          </a>
+        )}
+        {instagram && (
+          <a href={instagram} target="_blank">
+            <InstagramIcon class="icon" />
+          </a>
+        )}
+        </div>
+      </div>
       <p>{bio}</p>
     </div>
   </div>
@@ -39,11 +63,32 @@ const { abstract, bio, name, image, showAgendaLink = true } = Astro.props;
     gap: 30px;
   }
 
+  .name-and-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .icon {
+    width: 48px;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+
   @media (max-width: 1080px) {
     .speaker-details {
       flex-direction: column;
     }
-  }
+    .name-and-icons {
+      flex-direction: column;
+      align-items: start;
+      padding-bottom: 12px;
+  }}
 
   .speaker-image {
     max-width: 180px;
