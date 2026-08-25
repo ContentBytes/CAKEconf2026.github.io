@@ -12,6 +12,10 @@
     "answer": "No, the tickets are sold for both days."
   },
   {
+    "question": "Where and when does the conference take place?",
+    "answer": "CAKE conf takes place on September 24th and 25th, at al. Adama Mickiewicza 9 in Kraków."
+  },
+  {
     "question": "Will the presentations be recorded?",
     "answer": "No, we're not going to record the conference."
   },
