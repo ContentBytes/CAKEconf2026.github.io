@@ -21,7 +21,7 @@ const imgs: Record<string, ImageMetadata> = {
     <div class="talks">
       {
         talks.map((talk, index) => (
-        <div class={`row ${index % 2 === 1 ? "reversed" : ""}`}>
+          <div class:list={["row", { reversed: index % 2 === 1 }]}>
             <img src={imgs[talk.id].src} alt={talk.topic} class="picture" />
             <div class="topic-and-desc">
               <h3>{talk.topic}</h3>
@@ -54,8 +54,8 @@ const imgs: Record<string, ImageMetadata> = {
     padding: 20px 0;
   }
 
-  .row:nth-child(even) { 
-    flex-direction: row-reverse; 
+  .row.reversed {
+    flex-direction: row-reverse;
   }
 
   h3 {
@@ -67,7 +67,7 @@ const imgs: Record<string, ImageMetadata> = {
       flex-direction: column;
     }
 
-    .row:nth-child(even) { 
+    .row.reversed {
       flex-direction: column;
     }
   }
