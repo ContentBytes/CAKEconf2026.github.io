@@ -1,10 +1,14 @@
 ---
-import Button from "../Button.astro";
-
 /* Partners */
 import TechwriterPL from "../../assets/partners/techwriter-pl.png";
 import TWkoduje from "../../assets/partners/techwriter-koduje.png";
 import Ways from "../../assets/partners/ways.png";
+
+/* Supported by */
+import Google from "../../assets/partners/google.svg";
+
+/* Sponsors */
+import Hitachi from "../../assets/partners/hitachi.svg";
 
 const partners = [
   { name: "techwriter.pl", image: TechwriterPL, url: "https://techwriter.pl" },
@@ -27,7 +31,16 @@ const partners = [
       </p>
       <p>hello@contentbytes.pl</p>
     </div>
-    <div class="partners">
+    <h3>Sponsored by</h3>
+    <div class="logos">
+      <img src={Hitachi.src} alt="Hitachi" />
+    </div>
+    <h3>Supported by</h3>
+    <div class="logos">
+      <img src={Google.src} alt="Google" />
+    </div>
+    <h3>Media partners</h3>
+    <div class="logos">
       {
         partners.map((partner) => (
           <a href={partner.url} target="_blank" rel="noopener noreferrer">
@@ -51,14 +64,18 @@ const partners = [
     padding: 100px 0;
   }
 
+  h3 {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
   .description {
     padding: 40px 0;
   }
 
-  .partners {
+  .logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 50px 0;
     gap: 50px;
   }
