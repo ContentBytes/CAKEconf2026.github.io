@@ -1,0 +1,29 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/Hero.astro";
+import data from "../../data/cake2026.json";
+import SingleSpeaker from "../../components/Speakers/SingleSpeaker.astro";
+
+const speaker = data.speakers.find(
+  (speaker) => speaker.id === "marcel-rebro",
+);
+if (!speaker) throw new Error("Speaker not found");
+
+import MarcelImg from "../../assets/speakers/marcel-rebro.png";
+---
+
+<Base
+  title={speaker.topic}
+  description={speaker.bio}
+  canonicalPath={`/speakers/${speaker.id}`}
+>
+  <Hero title={speaker.topic} />
+  <SingleSpeaker
+    abstract={speaker.abstract}
+    name={speaker.name}
+    bio={speaker.bio}
+    image={MarcelImg}
+    linkedin={speaker.linkedin}
+    instagram={speaker.instagram}
+  />
+</Base>

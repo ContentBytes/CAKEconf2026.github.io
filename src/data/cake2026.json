@@ -195,6 +195,54 @@
       "abstract": "Documentation is always the last thing to ship and the first thing customers notice when it's missing. As a sole technical writer supporting five engineering squads, I knew that keeping up wasn't a process problem. It was a scale problem.\n\nSo I built an agent to help. In this talk, I'll walk through how I designed and iterated on an AI-powered documentation generation system using the Claude API, GitHub Actions, and a Python agentic loop, running across multiple repositories and integrated into our existing CI/CD pipeline. The agent monitors code changes, generates documentation drafts, and flags what needs a human decision. My job shifts from writing everything to reviewing, testing, and publishing.\n\nI'll cover what works, what doesn't, and the unexpected lessons from handing a core part of my job to an AI: how to prompt for structure and consistency, how to handle the cases the agent gets wrong, and what it means for the technical writer role when the boring parts start automating themselves.",
       "label": "AI",
       "slug": "agnieszka-marzec"
+    },
+    {
+      "id": "olga-stefaniuk-ziemecka",
+      "name": "Olga Stefaniuk-Ziemecka",
+      "title": "Senior Developer Evangelist",
+      "linkedin": "https://www.linkedin.com/in/olgastefaniuk/",
+      "instagram": "https://www.instagram.com/sowaprogramuje/",
+      "bio": "Olga Stefaniuk works as a Senior Developer Advocate at Box, holds a degree in Cognitive Science, and is passionate about content and learning experiences. She combines technology, education, and community building in her work in Developer Relations and beyond. She has also long supported women in tech through programs and communities such as TechLeaders, Girls.js, DareIT, and WomenTech Network.",
+      "topic": "Sketchnoting Against Cognitive Surrender",
+      "abstract": "AI makes it easier than ever to outsource our thinking, generate ideas, and skim through vast amounts of information. But when we stop doing the cognitive work ourselves, we may also stop truly understanding and remembering. This hands-on workshop explores sketchnoting as a tool for deep processing: turning what we hear and read into something we actively make sense of, connect, question, and remember. No artistic skills required.",
+      "label": "Documentation",
+      "slug": "olga-stefaniuk-ziemecka"
+    },
+    {
+      "id": "leo-breedt",
+      "name": "Leo Breedt",
+      "title": "Technical Account Manager",
+      "linkedin": "https://www.linkedin.com/in/leo-rocco-breedt-736b98111/",
+      "instagram": "https://www.instagram.com/leobreedt/",
+      "bio": "Leo is a Technical Account Manager at Comet, an AI observability company, where he works closely with customers to help them succeed across the AI development lifecycle — from model training to agent development. With a background in aeronautical engineering, he bridges product and customers to deliver practical, high-impact solutions, from technical documentation and developer examples to hands-on guidance.",
+      "topic": "Agents Do the Busywork. You Keep the Craft",
+      "abstract": "The tedious parts of docs work — tracking which ticket changed what, keeping pages in sync with the code, checking whether the examples in your repo actually still run, opening the PR — are exactly what coding agents are good at. This hands-on session shows you how to wire Claude, Codex, or the tool you use into your Jira, Linear, and repos so the busywork gets handled and the craft stays with you",
+      "label": "AI",
+      "slug": "leo-breedt"
+    },
+    {
+      "id": "lance-cummings",
+      "name": "Lance Cummings",
+      "title": "Professor and Trainer at University of North Carolina Wilmington, iSophist",
+      "linkedin": "https://www.linkedin.com/in/lance-cummings-phd/",
+      "instagram": "https://www.instagram.com/lanceelyot/",
+      "bio": "Lance Cummings is a professor of English in the Professional Writing program at the University of North Carolina Wilmington, where he studies how content and information get built across different technological and cultural settings. His recent work pairs classical rhetoric with structured content to build knowledge bases and custom AI systems that behave reliably, and he shares those experiments in his newsletter, Cyborgs Writing. He has also led student groups through Kraków more than once, so he’s glad to have a reason to come back.",
+      "topic": "Building Customized Knowledge Bases Using Markdown",
+      "abstract": "Participants will build a structured, AI-ready knowledge base in plain Markdown, starting from scratch. You’ll learn how to organize files with a taxonomy and naming convention that fit how you think, write frontmatter that keeps notes findable, and apply information types (concept, principle, process, task, reference) so both you and an AI can locate the right piece. We’ll spend half the time on live demonstration—querying, drafting, and pulling across my own knowledge base in Claude Cowork—so you leave with a working mental model and a step-by-step outline to build your own.",
+      "label": "AI",
+      "slug": "lance-cummings"
+    },
+    {
+      "id": "marcel-rebro",
+      "name": "Marcel Rebro",
+      "title": "Senior Technical Writer at Apify",
+      "linkedin": "https://www.linkedin.com/in/marcel-rebro",
+      "instagram": "https://www.instagram.com/marcel.rbro",
+      "bio": "Marcel Rebro is a Senior Technical Writer at Apify, where he owns the documentation for the AI and integrations teams. He works with engineers to turn complex platform features into clear docs that help developers integrate with and build on Apify. Marcel built the teardown format in this workshop to help the docs team find problems they'd stopped noticing in their own pages.",
+      "topic": "Documentation teardown: a workshop for spotting what you've stopped seeing",
+      "abstract": "The closer you are to a docs page, the less you can see it. You wrote the warning, you named the section, you know what it means — so when a user gets lost, you can't reproduce their confusion and the page never gets fixed. This is the curse of knowledge, and you can't review your way out of it: the people who wrote the docs are the same ones reviewing them.",
+      "label": "Documentation",
+      "slug": "marcel-rebro"
     }
   ]
 }

@@ -1,0 +1,41 @@
+---
+const { topic, speaker, label, url } = Astro.props;
+---
+
+<div class="talk">
+  <div class="topic">
+    {url ? <a href={`/speakers/${url}`}>{topic}</a> : topic}
+  </div>
+  {label && <div class="label">{label}</div>}
+  {speaker && <div class="speaker">{speaker}</div>}
+</div>
+
+<style>
+  .talk {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topic {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #4d4d4d;
+    align-self: flex-start;
+    padding: 4px 8px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--main-green);
+  }
+</style>

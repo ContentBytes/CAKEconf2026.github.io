@@ -2,46 +2,36 @@
 import SectionBackground from "../common/SectionBackground.astro";
 import Session from "./Session.astro";
 import Break from "./Break.astro";
+import Talk from "./Talk.astro";
 
-import { speakers } from "../../data/cake2026.json";
+import { talk } from "../../utils/talk";
 ---
 
 <SectionBackground color="white">
-    <Break time="09:00" type="Registration opens" />
+  <Break time="09:00" type="Registration opens" />
 </SectionBackground>
 
 <SectionBackground color="grey">
-  <Session time="09:30-11:00" topic="Workshops" speaker="More details soon!" />
+  <Session time="09:30-11:00">
+    <Talk {...talk("lance-cummings")} />
+    <Talk {...talk("marcel-rebro")} />
+  </Session>
 </SectionBackground>
 
 <SectionBackground color="white">
   <div class="section">
-    <Session
-      time="11:30-11:45"
-      topic="Opening remarks"
-      speaker="Content Bytes team"
-    />
-    <Session
-      time="11:45-12:15"
-      topic={speakers[2].topic}
-      speaker={speakers[2].name}
-      label={speakers[2].label}
-      url={speakers[2].id}
-    />
-    <Session
-      time="12:15-12:35"
-      topic={speakers[4].topic}
-      speaker={speakers[4].name}
-      label={speakers[4].label}
-      url={speakers[4].id}
-    />
-    <Session
-      time="12:35-13:05"
-      topic={speakers[5].topic}
-      speaker={speakers[5].name}
-      label={speakers[5].label}
-      url={speakers[5].id}
-    />
+    <Session time="11:30-11:45">
+      <Talk topic="Opening remarks" speaker="Content Bytes team" />
+    </Session>
+    <Session time="11:45-12:15">
+      <Talk {...talk("kalina-tyrkiel-szymanska")} />
+    </Session>
+    <Session time="12:15-12:35">
+      <Talk {...talk("marzena-cudecka")} />
+    </Session>
+    <Session time="12:35-13:05">
+      <Talk {...talk("pawel-woznikowski")} />
+    </Session>
   </div>
 </SectionBackground>
 
@@ -53,20 +43,12 @@ import { speakers } from "../../data/cake2026.json";
 
 <SectionBackground color="white">
   <div class="section">
-    <Session
-      time="14:00-14:30"
-      topic={speakers[0].topic}
-      speaker={`${speakers[0].name} and ${speakers[1].name}`}
-      label={speakers[0].label}
-      url={`${speakers[0].id}-and-${speakers[1].id}`}
-    />
-    <Session
-      time="14:30-15:00"
-      topic={speakers[6].topic}
-      speaker={speakers[6].name}
-      label={speakers[6].label}
-      url={speakers[6].id}
-    />
+    <Session time="14:00-14:30">
+      <Talk {...talk("jakub-andrzejewski", "magdalena-pociecha")} />
+    </Session>
+    <Session time="14:30-15:00">
+      <Talk {...talk("mateusz-krol")} />
+    </Session>
   </div>
 </SectionBackground>
 
@@ -76,20 +58,12 @@ import { speakers } from "../../data/cake2026.json";
 
 <SectionBackground color="white">
   <div class="section">
-    <Session
-      time="15:30-16:00"
-      topic={speakers[7].topic}
-      speaker={speakers[7].name}
-      label={speakers[7].label}
-      url={speakers[7].id}
-    />
-    <Session
-      time="16:00-16:30"
-      topic={speakers[10].topic}
-      speaker={speakers[10].name}
-      label={speakers[10].label}
-      url={speakers[10].id}
-    />
+    <Session time="15:30-16:00">
+      <Talk {...talk("ian-freeman")} />
+    </Session>
+    <Session time="16:00-16:30">
+      <Talk {...talk("malgorzata-lis")} />
+    </Session>
   </div>
 </SectionBackground>
 
@@ -99,19 +73,19 @@ import { speakers } from "../../data/cake2026.json";
 
 <SectionBackground color="white">
   <div class="section">
-    <Session
-      time="17:00-17:30"
-      topic={speakers[11].topic}
-      speaker={`${speakers[11].name} and ${speakers[12].name}`}
-      label={speakers[11].label}
-      url={`${speakers[11].id}-and-${speakers[12].id}`}
-    />
-    <Session time="17:30-17:40" topic="Closing remarks" speaker="Content Bytes team" />
+    <Session time="17:00-17:30">
+      <Talk {...talk("monika-skoneczna", "gergely-garai")} />
+    </Session>
+    <Session time="17:30-17:40">
+      <Talk topic="Closing remarks" speaker="Content Bytes team" />
+    </Session>
   </div>
 </SectionBackground>
 
 <SectionBackground color="grey">
-  <Session time="19:00-?" topic="After party" speaker="More details soon!" />
+  <Session time="19:00-?">
+    <Talk topic="After party" speaker="More details soon!" />
+  </Session>
 </SectionBackground>
 
 <style>

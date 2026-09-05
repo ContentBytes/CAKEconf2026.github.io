@@ -1,16 +1,10 @@
 ---
-const { time, topic, speaker, label, url } = Astro.props;
+const { time } = Astro.props;
 ---
 
 <div class="session">
   <div class="time">{time}</div>
-  <div class="session-details">
-    <div class="topic">
-      {url ? <a href={`/speakers/${url}`}>{topic}</a> : topic}
-    </div>
-    {label && <div class="label">{label}</div>}
-    {speaker && <div class="speaker">{speaker}</div>}
-  </div>
+  <div class="talks"><slot /></div>
 </div>
 
 <style>
@@ -26,36 +20,14 @@ const { time, topic, speaker, label, url } = Astro.props;
     }
   }
 
-  .session-details {
+  .talks {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
   }
 
   .time {
     font-size: 48px;
     min-width: 270px;
-  }
-
-  .topic {
-    text-transform: uppercase;
-    font-size: 24px;
-  }
-
-  .label {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #ffffff;
-    background-color: #4d4d4d;
-    align-self: flex-start;
-    padding: 4px 8px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--main-green);
   }
 </style>
