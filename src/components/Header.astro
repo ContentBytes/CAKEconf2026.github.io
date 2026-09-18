@@ -1,6 +1,5 @@
 ---
 import Button from "./Button.astro";
-import Section from "./Section.astro";
 
 const path = Astro.url.pathname;
 const isActive = (href: string) =>
@@ -13,9 +12,9 @@ const isActive = (href: string) =>
       <img src="/logo.svg" alt="CAKE conf logo" width="140" height="140" />
     </a>
     <div class="header__buttons">
-      <a href="/tickets">
+<!--       <a href="/tickets">
         <Button class="success-btn">Get tickets</Button>
-      </a>
+      </a> -->
       <button class="menu-button">MENU</button>
     </div>
   </div>
