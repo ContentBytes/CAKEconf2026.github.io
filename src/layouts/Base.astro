@@ -5,6 +5,7 @@ import SkipLink from "../components/SkipLink.astro";
 import { site } from "../content/site";
 import { Font } from "astro:assets";
 import Footer from "../components/Footer.astro";
+import NewsletterModal from "../components/NewsletterModal.astro";
 
 import "../styles/global.css";
 
@@ -46,5 +47,6 @@ const canonical = new URL(canonicalPath, site.url).toString();
       <slot />
     </main>
     <Footer />
+    <NewsletterModal />
   </body>
 </html>

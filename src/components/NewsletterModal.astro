@@ -1,0 +1,65 @@
+---
+import { allUrls } from "../assets/allUrls.js";
+
+const { getUpdatesLink } = allUrls;
+---
+
+<dialog class="newsletter-modal" aria-label="Get updates">
+  <form method="dialog">
+    <button class="newsletter-modal__close" aria-label="Close">×</button>
+  </form>
+  <iframe
+    class="newsletter-modal__frame"
+    data-src={getUpdatesLink}
+    title="Newsletter sign-up form"
+  ></iframe>
+</dialog>
+
+<style>
+  .newsletter-modal {
+    width: 560px;
+    height: 720px;
+    padding: 0;
+    border: none; 
+  }
+
+  .newsletter-modal::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .newsletter-modal__frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .newsletter-modal__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>(".newsletter-modal");
+  const frame = dialog?.querySelector<HTMLIFrameElement>(".newsletter-modal__frame");
+
+  document.addEventListener("click", (event) => {
+    const trigger = (event.target as Element).closest("[data-newsletter]");
+    if (!trigger || !dialog || !frame) return;
+    event.preventDefault();
+    if (!frame.src && frame.dataset.src) frame.src = frame.dataset.src;
+    dialog.showModal();
+  });
+
+  // Close when clicking outside the modal
+  dialog?.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+</script>
