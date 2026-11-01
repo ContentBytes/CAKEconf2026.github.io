@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+
+const modules = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/images/2026-gallery/*.png",
+  { eager: true },
+);
+
+const images = Object.entries(modules)
+  .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
+  .map(([, mod]) => mod.default);
+
+const popOrder = [5, 2, 8, 0, 6, 3, 9, 1, 7, 4];
+---
+
+<section class="section background">
+  <div class="grid">
+    {
+      images.map((img, i) => (
+        <Image
+          src={img}
+          alt={`CAKE conf 2026, photo ${i + 1}`}
+          class="photo"
+          style={`--n: ${popOrder.indexOf(i)}`}
+          widths={[400, 800]}
+          sizes="20vw"
+        />
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .background {
+    background-color: black;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .grid :global(.photo) {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    opacity: 0;
+    animation-name: pop;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: calc(0.3s + var(--n) * 0.35s);
+  }
+
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+    80% {
+      transform: scale(0.97);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .grid :global(.photo) {
+      animation: none;
+      opacity: 1;
+    }
+  }
+</style>

@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 60vh;
+  height: 40vh;
 }
 .green-text{ color:var(--main-green); }
 .pink-text{ color: #E852A2; }
